@@ -1,0 +1,766 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel q_buscador_usuarios_all search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN idusrglobal_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idusrglobal}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="idusrglobal" 
+	
+	data-signal-error-for="idusrglobal{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="idusrglobal" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_idusrglobal}">
+		{$label q_buscador_usuarios_all idusrglobal }	</label>
+	<div class="r-search-option">
+		{$searchtype_idusrglobal}
+	</div>
+	<div class="r-search-field">
+		{$idusrglobal_editcontrol}	</div>
+	<div class="r-search-field">
+		{$idusrglobal_editcontrol1}
+	</div>
+	
+</div>
+
+{END idusrglobal_fieldblock}
+											
+{BEGIN Username_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Username}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Username" 
+	
+	data-signal-error-for="Username{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="Username" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Username}">
+		{$label q_buscador_usuarios_all Username }	</label>
+	<div class="r-search-option">
+		{$searchtype_Username}
+	</div>
+	<div class="r-search-field">
+		{$Username_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Username_editcontrol1}
+	</div>
+	
+</div>
+
+{END Username_fieldblock}
+											
+{BEGIN usr_email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_email}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_email" 
+	
+	data-signal-error-for="usr_email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="usr_email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_email}">
+		{$label q_buscador_usuarios_all usr_email }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_email}
+	</div>
+	<div class="r-search-field">
+		{$usr_email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_email_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_email_fieldblock}
+											
+{BEGIN usr_name_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_name}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_name" 
+	
+	data-signal-error-for="usr_name{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="usr_name" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_name}">
+		{$label q_buscador_usuarios_all usr_name }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_name}
+	</div>
+	<div class="r-search-field">
+		{$usr_name_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_name_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_name_fieldblock}
+											
+{BEGIN usr_lname_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_lname}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_lname" 
+	
+	data-signal-error-for="usr_lname{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="usr_lname" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_lname}">
+		{$label q_buscador_usuarios_all usr_lname }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_lname}
+	</div>
+	<div class="r-search-field">
+		{$usr_lname_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_lname_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_lname_fieldblock}
+											
+{BEGIN usr_personalid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_personalid}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_personalid" 
+	
+	data-signal-error-for="usr_personalid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="usr_personalid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_personalid}">
+		{$label q_buscador_usuarios_all usr_personalid }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_personalid}
+	</div>
+	<div class="r-search-field">
+		{$usr_personalid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_personalid_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_personalid_fieldblock}
+											
+{BEGIN usr_image_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_image}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_image" 
+	
+	data-signal-error-for="usr_image{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="usr_image" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_image}">
+		{$label q_buscador_usuarios_all usr_image }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_image}
+	</div>
+	<div class="r-search-field">
+		{$usr_image_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_image_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_image_fieldblock}
+											
+{BEGIN BUSCADOR_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_BUSCADOR}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="BUSCADOR" 
+	
+	data-signal-error-for="BUSCADOR{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="BUSCADOR" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_BUSCADOR}">
+		{$label q_buscador_usuarios_all BUSCADOR }	</label>
+	<div class="r-search-option">
+		{$searchtype_BUSCADOR}
+	</div>
+	<div class="r-search-field">
+		{$BUSCADOR_editcontrol}	</div>
+	<div class="r-search-field">
+		{$BUSCADOR_editcontrol1}
+	</div>
+	
+</div>
+
+{END BUSCADOR_fieldblock}
+											
+{BEGIN usr_status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_status}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_status" 
+	
+	data-signal-error-for="usr_status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="usr_status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_status}">
+		{$label q_buscador_usuarios_all usr_status }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_status}
+	</div>
+	<div class="r-search-field">
+		{$usr_status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_status_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_status_fieldblock}
+											
+{BEGIN status_name_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status_name}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="status_name" 
+	
+	data-signal-error-for="status_name{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="status_name" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_status_name}">
+		{$label q_buscador_usuarios_all status_name }	</label>
+	<div class="r-search-option">
+		{$searchtype_status_name}
+	</div>
+	<div class="r-search-field">
+		{$status_name_editcontrol}	</div>
+	<div class="r-search-field">
+		{$status_name_editcontrol1}
+	</div>
+	
+</div>
+
+{END status_name_fieldblock}
+											
+{BEGIN usr_dependencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_dependencia}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_dependencia" 
+	
+	data-signal-error-for="usr_dependencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="usr_dependencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_dependencia}">
+		{$label q_buscador_usuarios_all usr_dependencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_dependencia}
+	</div>
+	<div class="r-search-field">
+		{$usr_dependencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_dependencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_dependencia_fieldblock}
+											
+{BEGIN usr_emergencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_emergencia}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_emergencia" 
+	
+	data-signal-error-for="usr_emergencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="usr_emergencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_emergencia}">
+		{$label q_buscador_usuarios_all usr_emergencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_emergencia}
+	</div>
+	<div class="r-search-field">
+		{$usr_emergencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_emergencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_emergencia_fieldblock}
+											
+{BEGIN usr_extension_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_extension}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_extension" 
+	
+	data-signal-error-for="usr_extension{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="usr_extension" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_extension}">
+		{$label q_buscador_usuarios_all usr_extension }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_extension}
+	</div>
+	<div class="r-search-field">
+		{$usr_extension_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_extension_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_extension_fieldblock}
+											
+{BEGIN usr_piso_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_piso}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_piso" 
+	
+	data-signal-error-for="usr_piso{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="usr_piso" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_piso}">
+		{$label q_buscador_usuarios_all usr_piso }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_piso}
+	</div>
+	<div class="r-search-field">
+		{$usr_piso_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_piso_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_piso_fieldblock}
+											
+{BEGIN global_rol_me_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_global_rol_me}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="global_rol_me" 
+	
+	data-signal-error-for="global_rol_me{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="global_rol_me" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_global_rol_me}">
+		{$label q_buscador_usuarios_all global_rol_me }	</label>
+	<div class="r-search-option">
+		{$searchtype_global_rol_me}
+	</div>
+	<div class="r-search-field">
+		{$global_rol_me_editcontrol}	</div>
+	<div class="r-search-field">
+		{$global_rol_me_editcontrol1}
+	</div>
+	
+</div>
+
+{END global_rol_me_fieldblock}
+											
+{BEGIN usr_minequipo_lider_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_minequipo_lider}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_minequipo_lider" 
+	
+	data-signal-error-for="usr_minequipo_lider{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="usr_minequipo_lider" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_minequipo_lider}">
+		{$label q_buscador_usuarios_all usr_minequipo_lider }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_minequipo_lider}
+	</div>
+	<div class="r-search-field">
+		{$usr_minequipo_lider_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_minequipo_lider_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_minequipo_lider_fieldblock}
+											
+{BEGIN usr_minequipo_grupo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_minequipo_grupo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_minequipo_grupo" 
+	
+	data-signal-error-for="usr_minequipo_grupo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="usr_minequipo_grupo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_minequipo_grupo}">
+		{$label q_buscador_usuarios_all usr_minequipo_grupo }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_minequipo_grupo}
+	</div>
+	<div class="r-search-field">
+		{$usr_minequipo_grupo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_minequipo_grupo_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_minequipo_grupo_fieldblock}
+											
+{BEGIN usr_dep_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_dep}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_dep" 
+	
+	data-signal-error-for="usr_dep{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="usr_dep" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_dep}">
+		{$label q_buscador_usuarios_all usr_dep }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_dep}
+	</div>
+	<div class="r-search-field">
+		{$usr_dep_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_dep_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_dep_fieldblock}
+											
+{BEGIN usr_cargo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_cargo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_cargo" 
+	
+	data-signal-error-for="usr_cargo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="usr_cargo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_cargo}">
+		{$label q_buscador_usuarios_all usr_cargo }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_cargo}
+	</div>
+	<div class="r-search-field">
+		{$usr_cargo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_cargo_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_cargo_fieldblock}
+											
+{BEGIN nombre_de_cargo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_de_cargo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nombre_de_cargo" 
+	
+	data-signal-error-for="nombre_de_cargo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="nombre_de_cargo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nombre_de_cargo}">
+		{$label q_buscador_usuarios_all nombre_de_cargo }	</label>
+	<div class="r-search-option">
+		{$searchtype_nombre_de_cargo}
+	</div>
+	<div class="r-search-field">
+		{$nombre_de_cargo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nombre_de_cargo_editcontrol1}
+	</div>
+	
+</div>
+
+{END nombre_de_cargo_fieldblock}
+											
+{BEGIN cargo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cargo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cargo" 
+	
+	data-signal-error-for="cargo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="cargo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cargo}">
+		{$label q_buscador_usuarios_all cargo }	</label>
+	<div class="r-search-option">
+		{$searchtype_cargo}
+	</div>
+	<div class="r-search-field">
+		{$cargo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cargo_editcontrol1}
+	</div>
+	
+</div>
+
+{END cargo_fieldblock}
+											
+{BEGIN grado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_grado}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="grado" 
+	
+	data-signal-error-for="grado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="grado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_grado}">
+		{$label q_buscador_usuarios_all grado }	</label>
+	<div class="r-search-option">
+		{$searchtype_grado}
+	</div>
+	<div class="r-search-field">
+		{$grado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$grado_editcontrol1}
+	</div>
+	
+</div>
+
+{END grado_fieldblock}
+											
+{BEGIN nombre_dependencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre_dependencia}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nombre_dependencia" 
+	
+	data-signal-error-for="nombre_dependencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="nombre_dependencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nombre_dependencia}">
+		{$label q_buscador_usuarios_all nombre_dependencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_nombre_dependencia}
+	</div>
+	<div class="r-search-field">
+		{$nombre_dependencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nombre_dependencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END nombre_dependencia_fieldblock}
+											
+{BEGIN Departamento_superior_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Departamento_superior}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Departamento_superior" 
+	
+	data-signal-error-for="Departamento_superior{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="Departamento_superior" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Departamento_superior}">
+		{$label q_buscador_usuarios_all Departamento_superior }	</label>
+	<div class="r-search-option">
+		{$searchtype_Departamento_superior}
+	</div>
+	<div class="r-search-field">
+		{$Departamento_superior_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Departamento_superior_editcontrol1}
+	</div>
+	
+</div>
+
+{END Departamento_superior_fieldblock}
+											
+{BEGIN usr_nombresfull_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_nombresfull}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_nombresfull" 
+	
+	data-signal-error-for="usr_nombresfull{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="usr_nombresfull" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_nombresfull}">
+		{$label q_buscador_usuarios_all usr_nombresfull }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_nombresfull}
+	</div>
+	<div class="r-search-field">
+		{$usr_nombresfull_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_nombresfull_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_nombresfull_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

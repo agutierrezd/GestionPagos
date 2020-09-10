@@ -1,0 +1,40 @@
+<?php
+$dalTableep_registros = array();
+$dalTableep_registros["Numero Documento"] = array("type"=>200,"varname"=>"Numero_Documento", "name" => "Numero Documento");
+$dalTableep_registros["Fecha de Registro"] = array("type"=>200,"varname"=>"Fecha_de_Registro", "name" => "Fecha de Registro");
+$dalTableep_registros["Fecha de Creacion"] = array("type"=>200,"varname"=>"Fecha_de_Creacion", "name" => "Fecha de Creacion");
+$dalTableep_registros["Estado"] = array("type"=>200,"varname"=>"Estado", "name" => "Estado");
+$dalTableep_registros["Dependencia"] = array("type"=>200,"varname"=>"Dependencia", "name" => "Dependencia");
+$dalTableep_registros["Dependencia Descripcion"] = array("type"=>200,"varname"=>"Dependencia_Descripcion", "name" => "Dependencia Descripcion");
+$dalTableep_registros["Rubro"] = array("type"=>200,"varname"=>"Rubro", "name" => "Rubro");
+$dalTableep_registros["Descripcion"] = array("type"=>200,"varname"=>"Descripcion", "name" => "Descripcion");
+$dalTableep_registros["Fuente"] = array("type"=>200,"varname"=>"Fuente", "name" => "Fuente");
+$dalTableep_registros["Recurso"] = array("type"=>200,"varname"=>"Recurso", "name" => "Recurso");
+$dalTableep_registros["Situacion"] = array("type"=>200,"varname"=>"Situacion", "name" => "Situacion");
+$dalTableep_registros["Valor Inicial"] = array("type"=>200,"varname"=>"Valor_Inicial", "name" => "Valor Inicial");
+$dalTableep_registros["Valor Operaciones"] = array("type"=>200,"varname"=>"Valor_Operaciones", "name" => "Valor Operaciones");
+$dalTableep_registros["Valor Actual"] = array("type"=>200,"varname"=>"Valor_Actual", "name" => "Valor Actual");
+$dalTableep_registros["Saldo por Utilizar"] = array("type"=>200,"varname"=>"Saldo_por_Utilizar", "name" => "Saldo por Utilizar");
+$dalTableep_registros["Tipo Identificacion"] = array("type"=>200,"varname"=>"Tipo_Identificacion", "name" => "Tipo Identificacion");
+$dalTableep_registros["Identificacion"] = array("type"=>200,"varname"=>"Identificacion", "name" => "Identificacion");
+$dalTableep_registros["Nombre Razon Social"] = array("type"=>200,"varname"=>"Nombre_Razon_Social", "name" => "Nombre Razon Social");
+$dalTableep_registros["Medio de Pago"] = array("type"=>200,"varname"=>"Medio_de_Pago", "name" => "Medio de Pago");
+$dalTableep_registros["Tipo Cuenta"] = array("type"=>200,"varname"=>"Tipo_Cuenta", "name" => "Tipo Cuenta");
+$dalTableep_registros["Numero Cuenta"] = array("type"=>200,"varname"=>"Numero_Cuenta", "name" => "Numero Cuenta");
+$dalTableep_registros["Estado Cuenta"] = array("type"=>200,"varname"=>"Estado_Cuenta", "name" => "Estado Cuenta");
+$dalTableep_registros["Entidad Nit"] = array("type"=>200,"varname"=>"Entidad_Nit", "name" => "Entidad Nit");
+$dalTableep_registros["Entidad Descripcion"] = array("type"=>200,"varname"=>"Entidad_Descripcion", "name" => "Entidad Descripcion");
+$dalTableep_registros["Solicitud CDP"] = array("type"=>200,"varname"=>"Solicitud_CDP", "name" => "Solicitud CDP");
+$dalTableep_registros["CDP"] = array("type"=>200,"varname"=>"CDP", "name" => "CDP");
+$dalTableep_registros["Compromisos"] = array("type"=>200,"varname"=>"Compromisos", "name" => "Compromisos");
+$dalTableep_registros["Cuentas por Pagar"] = array("type"=>200,"varname"=>"Cuentas_por_Pagar", "name" => "Cuentas por Pagar");
+$dalTableep_registros["Obligaciones"] = array("type"=>200,"varname"=>"Obligaciones", "name" => "Obligaciones");
+$dalTableep_registros["Ordenes de Pago"] = array("type"=>200,"varname"=>"Ordenes_de_Pago", "name" => "Ordenes de Pago");
+$dalTableep_registros["Reintegros"] = array("type"=>200,"varname"=>"Reintegros", "name" => "Reintegros");
+$dalTableep_registros["Fecha Documento Soporte"] = array("type"=>200,"varname"=>"Fecha_Documento_Soporte", "name" => "Fecha Documento Soporte");
+$dalTableep_registros["Tipo Documento Soporte"] = array("type"=>200,"varname"=>"Tipo_Documento_Soporte", "name" => "Tipo Documento Soporte");
+$dalTableep_registros["Numero Documento Soporte"] = array("type"=>200,"varname"=>"Numero_Documento_Soporte", "name" => "Numero Documento Soporte");
+$dalTableep_registros["Observaciones"] = array("type"=>200,"varname"=>"Observaciones", "name" => "Observaciones");
+
+$dal_info["sep2_at_127_0_0_1__ep_registros"] = &$dalTableep_registros;
+?>

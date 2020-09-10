@@ -1,0 +1,48 @@
+<?php
+$dalTablehoja_ruta_2020 = array();
+$dalTablehoja_ruta_2020["hr_id"] = array("type"=>3,"varname"=>"hr_id", "name" => "hr_id");
+$dalTablehoja_ruta_2020["hr_concepto_id"] = array("type"=>3,"varname"=>"hr_concepto_id", "name" => "hr_concepto_id");
+$dalTablehoja_ruta_2020["id_cont_fk"] = array("type"=>3,"varname"=>"id_cont_fk", "name" => "id_cont_fk");
+$dalTablehoja_ruta_2020["cont_num"] = array("type"=>200,"varname"=>"cont_num", "name" => "cont_num");
+$dalTablehoja_ruta_2020["hr_anio"] = array("type"=>2,"varname"=>"hr_anio", "name" => "hr_anio");
+$dalTablehoja_ruta_2020["periodo_id"] = array("type"=>3,"varname"=>"periodo_id", "name" => "periodo_id");
+$dalTablehoja_ruta_2020["ctrlpagos_id_fk"] = array("type"=>3,"varname"=>"ctrlpagos_id_fk", "name" => "ctrlpagos_id_fk");
+$dalTablehoja_ruta_2020["cxc_id_fk"] = array("type"=>3,"varname"=>"cxc_id_fk", "name" => "cxc_id_fk");
+$dalTablehoja_ruta_2020["obligacion"] = array("type"=>200,"varname"=>"obligacion", "name" => "obligacion");
+$dalTablehoja_ruta_2020["id_informe_fk"] = array("type"=>3,"varname"=>"id_informe_fk", "name" => "id_informe_fk");
+$dalTablehoja_ruta_2020["hr_nit_contra_ta"] = array("type"=>200,"varname"=>"hr_nit_contra_ta", "name" => "hr_nit_contra_ta");
+$dalTablehoja_ruta_2020["hr_asunto"] = array("type"=>200,"varname"=>"hr_asunto", "name" => "hr_asunto");
+$dalTablehoja_ruta_2020["hr_valor"] = array("type"=>5,"varname"=>"hr_valor", "name" => "hr_valor");
+$dalTablehoja_ruta_2020["hr_fechaingreso"] = array("type"=>135,"varname"=>"hr_fechaingreso", "name" => "hr_fechaingreso");
+$dalTablehoja_ruta_2020["hr_fecha_salida"] = array("type"=>135,"varname"=>"hr_fecha_salida", "name" => "hr_fecha_salida");
+$dalTablehoja_ruta_2020["hr_estado_firma"] = array("type"=>200,"varname"=>"hr_estado_firma", "name" => "hr_estado_firma");
+$dalTablehoja_ruta_2020["hr_estado_numero"] = array("type"=>200,"varname"=>"hr_estado_numero", "name" => "hr_estado_numero");
+$dalTablehoja_ruta_2020["hr_estado_fecha"] = array("type"=>7,"varname"=>"hr_estado_fecha", "name" => "hr_estado_fecha");
+$dalTablehoja_ruta_2020["hr_estado_file"] = array("type"=>200,"varname"=>"hr_estado_file", "name" => "hr_estado_file");
+$dalTablehoja_ruta_2020["hr_estado_user"] = array("type"=>200,"varname"=>"hr_estado_user", "name" => "hr_estado_user");
+$dalTablehoja_ruta_2020["sys_user"] = array("type"=>200,"varname"=>"sys_user", "name" => "sys_user");
+$dalTablehoja_ruta_2020["sys_dep"] = array("type"=>3,"varname"=>"sys_dep", "name" => "sys_dep");
+$dalTablehoja_ruta_2020["sys_user_actual"] = array("type"=>200,"varname"=>"sys_user_actual", "name" => "sys_user_actual");
+$dalTablehoja_ruta_2020["sys_fecha_reg"] = array("type"=>135,"varname"=>"sys_fecha_reg", "name" => "sys_fecha_reg");
+$dalTablehoja_ruta_2020["hr_file"] = array("type"=>200,"varname"=>"hr_file", "name" => "hr_file");
+$dalTablehoja_ruta_2020["not_status"] = array("type"=>16,"varname"=>"not_status", "name" => "not_status");
+$dalTablehoja_ruta_2020["not_time"] = array("type"=>134,"varname"=>"not_time", "name" => "not_time");
+$dalTablehoja_ruta_2020["not_user"] = array("type"=>200,"varname"=>"not_user", "name" => "not_user");
+$dalTablehoja_ruta_2020["not_date"] = array("type"=>135,"varname"=>"not_date", "name" => "not_date");
+$dalTablehoja_ruta_2020["not_mail"] = array("type"=>200,"varname"=>"not_mail", "name" => "not_mail");
+$dalTablehoja_ruta_2020["not_msg"] = array("type"=>200,"varname"=>"not_msg", "name" => "not_msg");
+$dalTablehoja_ruta_2020["sysdate"] = array("type"=>135,"varname"=>"sysdate", "name" => "sysdate");
+$dalTablehoja_ruta_2020["evento_type_id_fk"] = array("type"=>3,"varname"=>"evento_type_id_fk", "name" => "evento_type_id_fk");
+$dalTablehoja_ruta_2020["user_from"] = array("type"=>200,"varname"=>"user_from", "name" => "user_from");
+$dalTablehoja_ruta_2020["tercero_email_a"] = array("type"=>200,"varname"=>"tercero_email_a", "name" => "tercero_email_a");
+$dalTablehoja_ruta_2020["tercero_email_b"] = array("type"=>200,"varname"=>"tercero_email_b", "name" => "tercero_email_b");
+$dalTablehoja_ruta_2020["last_act_user"] = array("type"=>200,"varname"=>"last_act_user", "name" => "last_act_user");
+$dalTablehoja_ruta_2020["hr_aprob_estado"] = array("type"=>16,"varname"=>"hr_aprob_estado", "name" => "hr_aprob_estado");
+$dalTablehoja_ruta_2020["hr_aprob_fecha"] = array("type"=>135,"varname"=>"hr_aprob_fecha", "name" => "hr_aprob_fecha");
+$dalTablehoja_ruta_2020["hr_aprob_user"] = array("type"=>200,"varname"=>"hr_aprob_user", "name" => "hr_aprob_user");
+$dalTablehoja_ruta_2020["anio"] = array("type"=>2,"varname"=>"anio", "name" => "anio");
+$dalTablehoja_ruta_2020["mes"] = array("type"=>16,"varname"=>"mes", "name" => "mes");
+	$dalTablehoja_ruta_2020["hr_id"]["key"]=true;
+
+$dal_info["dbct_at_127_0_0_1__hoja_ruta_2020"] = &$dalTablehoja_ruta_2020;
+?>

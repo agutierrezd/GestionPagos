@@ -1,0 +1,391 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel hoja_ruta_ob search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ctrlpagos_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ctrlpagos_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ctrlpagos_id" 
+	
+	data-signal-error-for="ctrlpagos_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="ctrlpagos_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ctrlpagos_id}">
+		{$label hoja_ruta_ob ctrlpagos_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_ctrlpagos_id}
+	</div>
+	<div class="r-search-field">
+		{$ctrlpagos_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ctrlpagos_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END ctrlpagos_id_fieldblock}
+											
+{BEGIN hr_id_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_id_fk}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="hr_id_fk" 
+	
+	data-signal-error-for="hr_id_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="hr_id_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hr_id_fk}">
+		{$label hoja_ruta_ob hr_id_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_hr_id_fk}
+	</div>
+	<div class="r-search-field">
+		{$hr_id_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hr_id_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END hr_id_fk_fieldblock}
+											
+{BEGIN id_cont_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_cont_fk" 
+	
+	data-signal-error-for="id_cont_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="id_cont_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_cont_fk}">
+		{$label hoja_ruta_ob id_cont_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_cont_fk}
+	</div>
+	<div class="r-search-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_cont_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_cont_fk_fieldblock}
+											
+{BEGIN ob_num_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ob_num}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ob_num" 
+	
+	data-signal-error-for="ob_num{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="ob_num" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ob_num}">
+		{$label hoja_ruta_ob ob_num }	</label>
+	<div class="r-search-option">
+		{$searchtype_ob_num}
+	</div>
+	<div class="r-search-field">
+		{$ob_num_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ob_num_editcontrol1}
+	</div>
+	
+</div>
+
+{END ob_num_fieldblock}
+											
+{BEGIN ob_fecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ob_fecha}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ob_fecha" 
+	
+	data-signal-error-for="ob_fecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="ob_fecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ob_fecha}">
+		{$label hoja_ruta_ob ob_fecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_ob_fecha}
+	</div>
+	<div class="r-search-field">
+		{$ob_fecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ob_fecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END ob_fecha_fieldblock}
+											
+{BEGIN ob_anexo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ob_anexo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ob_anexo" 
+	
+	data-signal-error-for="ob_anexo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="ob_anexo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ob_anexo}">
+		{$label hoja_ruta_ob ob_anexo }	</label>
+	<div class="r-search-option">
+		{$searchtype_ob_anexo}
+	</div>
+	<div class="r-search-field">
+		{$ob_anexo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ob_anexo_editcontrol1}
+	</div>
+	
+</div>
+
+{END ob_anexo_fieldblock}
+											
+{BEGIN ob_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ob_user}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ob_user" 
+	
+	data-signal-error-for="ob_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="ob_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ob_user}">
+		{$label hoja_ruta_ob ob_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_ob_user}
+	</div>
+	<div class="r-search-field">
+		{$ob_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ob_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END ob_user_fieldblock}
+											
+{BEGIN ob_fechauser_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ob_fechauser}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ob_fechauser" 
+	
+	data-signal-error-for="ob_fechauser{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="ob_fechauser" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ob_fechauser}">
+		{$label hoja_ruta_ob ob_fechauser }	</label>
+	<div class="r-search-option">
+		{$searchtype_ob_fechauser}
+	</div>
+	<div class="r-search-field">
+		{$ob_fechauser_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ob_fechauser_editcontrol1}
+	</div>
+	
+</div>
+
+{END ob_fechauser_fieldblock}
+											
+{BEGIN tercero_email_a_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tercero_email_a}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tercero_email_a" 
+	
+	data-signal-error-for="tercero_email_a{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="tercero_email_a" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tercero_email_a}">
+		{$label hoja_ruta_ob tercero_email_a }	</label>
+	<div class="r-search-option">
+		{$searchtype_tercero_email_a}
+	</div>
+	<div class="r-search-field">
+		{$tercero_email_a_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tercero_email_a_editcontrol1}
+	</div>
+	
+</div>
+
+{END tercero_email_a_fieldblock}
+											
+{BEGIN tercero_email_b_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tercero_email_b}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tercero_email_b" 
+	
+	data-signal-error-for="tercero_email_b{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="tercero_email_b" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tercero_email_b}">
+		{$label hoja_ruta_ob tercero_email_b }	</label>
+	<div class="r-search-option">
+		{$searchtype_tercero_email_b}
+	</div>
+	<div class="r-search-field">
+		{$tercero_email_b_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tercero_email_b_editcontrol1}
+	</div>
+	
+</div>
+
+{END tercero_email_b_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

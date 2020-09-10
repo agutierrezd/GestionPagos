@@ -1,0 +1,1015 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<img src="{$file_url images/Logo_Coldeportes.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" />
+	</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel hoja_ruta_2020_pn add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Radicar solicitud de pago				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+					Anexos				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+									</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_cont_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-vertical-field" 
+	data-fieldname="id_cont_fk" 
+	data-signal-error-for="id_cont_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_cont_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_cont_fk}">
+		{BEGIN id_cont_fk_label}{$label hoja_ruta_2020_pn id_cont_fk }{END id_cont_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_cont_fk">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn id_cont_fk }		</div>
+	</div>
+</div>
+
+
+{END id_cont_fk_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_num_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_num}  r-vertical-field" 
+	data-fieldname="cont_num" 
+	data-signal-error-for="cont_num{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="cont_num" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_num}">
+		{BEGIN cont_num_label}{$label hoja_ruta_2020_pn cont_num }{END cont_num_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_num_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_num">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn cont_num }		</div>
+	</div>
+</div>
+
+
+{END cont_num_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN hr_asunto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_asunto}  r-vertical-field" 
+	data-fieldname="hr_asunto" 
+	data-signal-error-for="hr_asunto{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="hr_asunto" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hr_asunto}">
+		{BEGIN hr_asunto_label}{$label hoja_ruta_2020_pn hr_asunto }{END hr_asunto_label}
+	</label>
+	<div class="r-edit-field">
+		{$hr_asunto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hr_asunto">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn hr_asunto }		</div>
+	</div>
+</div>
+
+
+{END hr_asunto_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+			 
+																
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN hr_valor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_valor}  r-vertical-field" 
+	data-fieldname="hr_valor" 
+	data-signal-error-for="hr_valor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="hr_valor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hr_valor}">
+		{BEGIN hr_valor_label}{$label hoja_ruta_2020_pn hr_valor }{END hr_valor_label}
+	</label>
+	<div class="r-edit-field">
+		{$hr_valor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hr_valor">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn hr_valor }		</div>
+	</div>
+</div>
+
+
+{END hr_valor_fieldblock}
+	
+								</td>
+			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_dep_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_dep}  r-vertical-field" 
+	data-fieldname="sys_dep" 
+	data-signal-error-for="sys_dep{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="sys_dep" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_dep}">
+		{BEGIN sys_dep_label}{$label hoja_ruta_2020_pn sys_dep }{END sys_dep_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_dep_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_dep">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn sys_dep }		</div>
+	</div>
+</div>
+
+
+{END sys_dep_fieldblock}
+	
+								</td>
+			{END cellblock_section_c9}
+			 
+		
+							
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c10}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-vertical-field" 
+	data-fieldname="sys_user" 
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="sys_user" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_user}">
+		{BEGIN sys_user_label}{$label hoja_ruta_2020_pn sys_user }{END sys_user_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_user">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn sys_user }		</div>
+	</div>
+</div>
+
+
+{END sys_user_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+			 
+																
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN not_mail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_not_mail}  r-vertical-field" 
+	data-fieldname="not_mail" 
+	data-signal-error-for="not_mail{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="not_mail" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_not_mail}">
+		{BEGIN not_mail_label}{$label hoja_ruta_2020_pn not_mail }{END not_mail_label}
+	</label>
+	<div class="r-edit-field">
+		{$not_mail_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="not_mail">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn not_mail }		</div>
+	</div>
+</div>
+
+
+{END not_mail_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN not_msg_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_not_msg}  r-vertical-field" 
+	data-fieldname="not_msg" 
+	data-signal-error-for="not_msg{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="not_msg" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_not_msg}">
+		{BEGIN not_msg_label}{$label hoja_ruta_2020_pn not_msg }{END not_msg_label}
+	</label>
+	<div class="r-edit-field">
+		{$not_msg_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="not_msg">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn not_msg }		</div>
+	</div>
+</div>
+
+
+{END not_msg_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tercero_email_a_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tercero_email_a}  r-vertical-field" 
+	data-fieldname="tercero_email_a" 
+	data-signal-error-for="tercero_email_a{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="tercero_email_a" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tercero_email_a}">
+		{BEGIN tercero_email_a_label}{$label hoja_ruta_2020_pn tercero_email_a }{END tercero_email_a_label}
+	</label>
+	<div class="r-edit-field">
+		{$tercero_email_a_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tercero_email_a">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn tercero_email_a }		</div>
+	</div>
+</div>
+
+
+{END tercero_email_a_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tercero_email_b_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tercero_email_b}  r-vertical-field" 
+	data-fieldname="tercero_email_b" 
+	data-signal-error-for="tercero_email_b{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="tercero_email_b" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tercero_email_b}">
+		{BEGIN tercero_email_b_label}{$label hoja_ruta_2020_pn tercero_email_b }{END tercero_email_b_label}
+	</label>
+	<div class="r-edit-field">
+		{$tercero_email_b_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tercero_email_b">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn tercero_email_b }		</div>
+	</div>
+</div>
+
+
+{END tercero_email_b_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_hoja_ruta_2020_files}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption hoja_ruta_2020_files }				
+							<span>
+					{$detailslButtons_hoja_ruta_2020_files}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_hoja_ruta_2020_files}
+		</div>
+	</div>
+</div>
+{END details_hoja_ruta_2020_files}
+	
+				{END section2_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN hr_concepto_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_concepto_id}  r-vertical-field" 
+	data-fieldname="hr_concepto_id" 
+	data-signal-error-for="hr_concepto_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="hr_concepto_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hr_concepto_id}">
+		{BEGIN hr_concepto_id_label}{$label hoja_ruta_2020_pn hr_concepto_id }{END hr_concepto_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$hr_concepto_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hr_concepto_id">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn hr_concepto_id }		</div>
+	</div>
+</div>
+
+
+{END hr_concepto_id_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+			 
+																
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN not_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_not_user}  r-vertical-field" 
+	data-fieldname="not_user" 
+	data-signal-error-for="not_user{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="not_user" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_not_user}">
+		{BEGIN not_user_label}{$label hoja_ruta_2020_pn not_user }{END not_user_label}
+	</label>
+	<div class="r-edit-field">
+		{$not_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="not_user">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn not_user }		</div>
+	</div>
+</div>
+
+
+{END not_user_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN hr_fechaingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_fechaingreso}  r-vertical-field" 
+	data-fieldname="hr_fechaingreso" 
+	data-signal-error-for="hr_fechaingreso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="hr_fechaingreso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hr_fechaingreso}">
+		{BEGIN hr_fechaingreso_label}{$label hoja_ruta_2020_pn hr_fechaingreso }{END hr_fechaingreso_label}
+	</label>
+	<div class="r-edit-field">
+		{$hr_fechaingreso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hr_fechaingreso">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn hr_fechaingreso }		</div>
+	</div>
+</div>
+
+
+{END hr_fechaingreso_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+			 
+																
+
+{BEGIN cellblock_section1_c5}
+<td
+	{$cell_section1_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN hr_anio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_anio}  r-vertical-field" 
+	data-fieldname="hr_anio" 
+	data-signal-error-for="hr_anio{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="hr_anio" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hr_anio}">
+		{BEGIN hr_anio_label}{$label hoja_ruta_2020_pn hr_anio }{END hr_anio_label}
+	</label>
+	<div class="r-edit-field">
+		{$hr_anio_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hr_anio">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn hr_anio }		</div>
+	</div>
+</div>
+
+
+{END hr_anio_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c2}
+<td
+	{$cell_section1_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN not_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_not_date}  r-vertical-field" 
+	data-fieldname="not_date" 
+	data-signal-error-for="not_date{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="not_date" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_not_date}">
+		{BEGIN not_date_label}{$label hoja_ruta_2020_pn not_date }{END not_date_label}
+	</label>
+	<div class="r-edit-field">
+		{$not_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="not_date">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn not_date }		</div>
+	</div>
+</div>
+
+
+{END not_date_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c2}
+			 
+																
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN evento_type_id_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_evento_type_id_fk}  r-vertical-field" 
+	data-fieldname="evento_type_id_fk" 
+	data-signal-error-for="evento_type_id_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="evento_type_id_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_evento_type_id_fk}">
+		{BEGIN evento_type_id_fk_label}{$label hoja_ruta_2020_pn evento_type_id_fk }{END evento_type_id_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$evento_type_id_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="evento_type_id_fk">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn evento_type_id_fk }		</div>
+	</div>
+</div>
+
+
+{END evento_type_id_fk_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN last_act_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_last_act_user}  r-vertical-field" 
+	data-fieldname="last_act_user" 
+	data-signal-error-for="last_act_user{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="last_act_user" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_last_act_user}">
+		{BEGIN last_act_user_label}{$label hoja_ruta_2020_pn last_act_user }{END last_act_user_label}
+	</label>
+	<div class="r-edit-field">
+		{$last_act_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="last_act_user">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn last_act_user }		</div>
+	</div>
+</div>
+
+
+{END last_act_user_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+			 
+																
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN hr_nit_contra_ta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hr_nit_contra_ta}  r-vertical-field" 
+	data-fieldname="hr_nit_contra_ta" 
+	data-signal-error-for="hr_nit_contra_ta{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="hr_nit_contra_ta" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hr_nit_contra_ta}">
+		{BEGIN hr_nit_contra_ta_label}{$label hoja_ruta_2020_pn hr_nit_contra_ta }{END hr_nit_contra_ta_label}
+	</label>
+	<div class="r-edit-field">
+		{$hr_nit_contra_ta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hr_nit_contra_ta">
+		<div class="text-muted" >
+		{$tooltip hoja_ruta_2020_pn hr_nit_contra_ta }		</div>
+	</div>
+</div>
+
+
+{END hr_nit_contra_ta_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c7}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

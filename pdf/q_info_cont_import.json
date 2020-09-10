@@ -1,0 +1,294 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel q_info_cont import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_import_field}","text":{$id_cont_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field1}","text":{$CONTRATOID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field2}","text":{$LOGINLEVEL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field3}","text":{$VIGENCIA_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field4}","text":{$cont_hash_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field5}","text":{$cont_estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field6}","text":{$estado_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field7}","text":{$estado_img_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field8}","text":{$estado_lnk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field9}","text":{$contractor_type_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field10}","text":{$DOCID_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field11}","text":{$contractor_name_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field12}","text":{$contractor_lname_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field13}","text":{$contractor_nombresfull_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field14}","text":{$contractor_email_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field15}","text":{$contractor_email_mincit_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field16}","text":{$contractor_phone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field17}","text":{$contractor_mobile_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field18}","text":{$CODC_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field19}","text":{$NUMC_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field20}","text":{$cont_tipo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field21}","text":{$nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field22}","text":{$cont_codrubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field23}","text":{$cont_tipopre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field24}","text":{$cont_catalogo_presupuestal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field25}","text":{$cont_fase_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field26}","text":{$FECHAI_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field27}","text":{$FECHAINICIO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field28}","text":{$FECHAF_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field29}","text":{$FECHAFINAL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field30}","text":{$QTYDIAS_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field31}","text":{$QTYMESES_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field32}","text":{$VALORI_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field33}","text":{$cont_fechaapertura_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field34}","text":{$CDP_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field35}","text":{$RP_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field36}","text":{$cont_tipoproceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field37}","text":{$cont_periodicidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field38}","text":{$periodo_name_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field39}","text":{$periodo_value_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field40}","text":{$periodo_dias_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field41}","text":{$cont_informessug_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field42}","text":{$periodo_meses_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field43}","text":{$cont_objeto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field44}","text":{$cont_fechavigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field45}","text":{$VALORINICIAL_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field46}","text":{$cont_valormensual_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field47}","text":{$iva_regimen_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field48}","text":{$CONTVINCULADO_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field49}","text":{$cont_paa_id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field50}","text":{$cont_tipoc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field51}","text":{$ct_tipo_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field52}","text":{$cont_modalidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field53}","text":{$des_mod_proceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field54}","text":{$cont_causalc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field55}","text":{$ctb_tipo_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field56}","text":{$cont_secop_enlace_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field57}","text":{$cont_dep_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

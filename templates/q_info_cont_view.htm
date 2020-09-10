@@ -1,0 +1,685 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel q_info_cont view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_cont_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont}  r-vertical-field" data-fieldname="id_cont" data-signal-error-for="id_cont{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_cont" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_cont}">
+		
+		{BEGIN id_cont_label}{$label q_info_cont id_cont }{END id_cont_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_cont_value}	</div>
+
+		
+</div>
+
+
+{END id_cont_fieldblock}
+											
+{BEGIN cont_nit_contra_ta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_nit_contra_ta}  r-vertical-field" data-fieldname="cont_nit_contra_ta" data-signal-error-for="cont_nit_contra_ta{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cont_nit_contra_ta" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_nit_contra_ta}">
+		
+		{BEGIN cont_nit_contra_ta_label}{$label q_info_cont cont_nit_contra_ta }{END cont_nit_contra_ta_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_nit_contra_ta_value}	</div>
+
+		
+</div>
+
+
+{END cont_nit_contra_ta_fieldblock}
+											
+{BEGIN cont_estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_estado}  r-vertical-field" data-fieldname="cont_estado" data-signal-error-for="cont_estado{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="cont_estado" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_estado}">
+		
+		{BEGIN cont_estado_label}{$label q_info_cont cont_estado }{END cont_estado_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_estado_value}	</div>
+
+		
+</div>
+
+
+{END cont_estado_fieldblock}
+											
+{BEGIN numcontrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_numcontrato}  r-vertical-field" data-fieldname="numcontrato" data-signal-error-for="numcontrato{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="numcontrato" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_numcontrato}">
+		
+		{BEGIN numcontrato_label}{$label q_info_cont numcontrato }{END numcontrato_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$numcontrato_value}	</div>
+
+		
+</div>
+
+
+{END numcontrato_fieldblock}
+											
+{BEGIN pre_contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pre_contnumero}  r-vertical-field" data-fieldname="pre_contnumero" data-signal-error-for="pre_contnumero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="pre_contnumero" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_pre_contnumero}">
+		
+		{BEGIN pre_contnumero_label}{$label q_info_cont pre_contnumero }{END pre_contnumero_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$pre_contnumero_value}	</div>
+
+		
+</div>
+
+
+{END pre_contnumero_fieldblock}
+											
+{BEGIN contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contnumero}  r-vertical-field" data-fieldname="contnumero" data-signal-error-for="contnumero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="contnumero" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contnumero}">
+		
+		{BEGIN contnumero_label}{$label q_info_cont contnumero }{END contnumero_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$contnumero_value}	</div>
+
+		
+</div>
+
+
+{END contnumero_fieldblock}
+											
+{BEGIN cont_ano_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_ano}  r-vertical-field" data-fieldname="cont_ano" data-signal-error-for="cont_ano{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="cont_ano" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_ano}">
+		
+		{BEGIN cont_ano_label}{$label q_info_cont cont_ano }{END cont_ano_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_ano_value}	</div>
+
+		
+</div>
+
+
+{END cont_ano_fieldblock}
+											
+{BEGIN cont_codrubro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_codrubro}  r-vertical-field" data-fieldname="cont_codrubro" data-signal-error-for="cont_codrubro{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="cont_codrubro" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_codrubro}">
+		
+		{BEGIN cont_codrubro_label}{$label q_info_cont cont_codrubro }{END cont_codrubro_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_codrubro_value}	</div>
+
+		
+</div>
+
+
+{END cont_codrubro_fieldblock}
+											
+{BEGIN cont_catalogo_presupuestal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_catalogo_presupuestal}  r-vertical-field" data-fieldname="cont_catalogo_presupuestal" data-signal-error-for="cont_catalogo_presupuestal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="cont_catalogo_presupuestal" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_catalogo_presupuestal}">
+		
+		{BEGIN cont_catalogo_presupuestal_label}{$label q_info_cont cont_catalogo_presupuestal }{END cont_catalogo_presupuestal_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_catalogo_presupuestal_value}	</div>
+
+		
+</div>
+
+
+{END cont_catalogo_presupuestal_fieldblock}
+											
+{BEGIN cont_fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_inicio}  r-vertical-field" data-fieldname="cont_fecha_inicio" data-signal-error-for="cont_fecha_inicio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="cont_fecha_inicio" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_fecha_inicio}">
+		
+		{BEGIN cont_fecha_inicio_label}{$label q_info_cont cont_fecha_inicio }{END cont_fecha_inicio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_fecha_inicio_value}	</div>
+
+		
+</div>
+
+
+{END cont_fecha_inicio_fieldblock}
+											
+{BEGIN cont_fechafinal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechafinal}  r-vertical-field" data-fieldname="cont_fechafinal" data-signal-error-for="cont_fechafinal{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="cont_fechafinal" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_fechafinal}">
+		
+		{BEGIN cont_fechafinal_label}{$label q_info_cont cont_fechafinal }{END cont_fechafinal_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_fechafinal_value}	</div>
+
+		
+</div>
+
+
+{END cont_fechafinal_fieldblock}
+											
+{BEGIN cont_periodicidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_periodicidad}  r-vertical-field" data-fieldname="cont_periodicidad" data-signal-error-for="cont_periodicidad{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="cont_periodicidad" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_periodicidad}">
+		
+		{BEGIN cont_periodicidad_label}{$label q_info_cont cont_periodicidad }{END cont_periodicidad_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_periodicidad_value}	</div>
+
+		
+</div>
+
+
+{END cont_periodicidad_fieldblock}
+											
+{BEGIN cont_valorinicial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorinicial}  r-vertical-field" data-fieldname="cont_valorinicial" data-signal-error-for="cont_valorinicial{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="cont_valorinicial" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_valorinicial}">
+		
+		{BEGIN cont_valorinicial_label}{$label q_info_cont cont_valorinicial }{END cont_valorinicial_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_valorinicial_value}	</div>
+
+		
+</div>
+
+
+{END cont_valorinicial_fieldblock}
+											
+{BEGIN cont_valormensual_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual}  r-vertical-field" data-fieldname="cont_valormensual" data-signal-error-for="cont_valormensual{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="cont_valormensual" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_valormensual}">
+		
+		{BEGIN cont_valormensual_label}{$label q_info_cont cont_valormensual }{END cont_valormensual_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_valormensual_value}	</div>
+
+		
+</div>
+
+
+{END cont_valormensual_fieldblock}
+											
+{BEGIN cont_secop_enlace_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_enlace}  r-vertical-field" data-fieldname="cont_secop_enlace" data-signal-error-for="cont_secop_enlace{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="cont_secop_enlace" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cont_secop_enlace}">
+		
+		{BEGIN cont_secop_enlace_label}{$label q_info_cont cont_secop_enlace }{END cont_secop_enlace_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cont_secop_enlace_value}	</div>
+
+		
+</div>
+
+
+{END cont_secop_enlace_fieldblock}
+											
+{BEGIN documento_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documento_id}  r-vertical-field" data-fieldname="documento_id" data-signal-error-for="documento_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="documento_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_documento_id}">
+		
+		{BEGIN documento_id_label}{$label q_info_cont documento_id }{END documento_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$documento_id_value}	</div>
+
+		
+</div>
+
+
+{END documento_id_fieldblock}
+											
+{BEGIN nombres_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombres}  r-vertical-field" data-fieldname="nombres" data-signal-error-for="nombres{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="nombres" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nombres}">
+		
+		{BEGIN nombres_label}{$label q_info_cont nombres }{END nombres_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nombres_value}	</div>
+
+		
+</div>
+
+
+{END nombres_fieldblock}
+											
+{BEGIN apellidos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apellidos}  r-vertical-field" data-fieldname="apellidos" data-signal-error-for="apellidos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="apellidos" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_apellidos}">
+		
+		{BEGIN apellidos_label}{$label q_info_cont apellidos }{END apellidos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$apellidos_value}	</div>
+
+		
+</div>
+
+
+{END apellidos_fieldblock}
+											
+{BEGIN cargo_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cargo_id}  r-vertical-field" data-fieldname="cargo_id" data-signal-error-for="cargo_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="cargo_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_cargo_id}">
+		
+		{BEGIN cargo_id_label}{$label q_info_cont cargo_id }{END cargo_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$cargo_id_value}	</div>
+
+		
+</div>
+
+
+{END cargo_id_fieldblock}
+											
+{BEGIN dependencia_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dependencia_id}  r-vertical-field" data-fieldname="dependencia_id" data-signal-error-for="dependencia_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="dependencia_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_dependencia_id}">
+		
+		{BEGIN dependencia_id_label}{$label q_info_cont dependencia_id }{END dependencia_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$dependencia_id_value}	</div>
+
+		
+</div>
+
+
+{END dependencia_id_fieldblock}
+											
+{BEGIN sup_fechanot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_fechanot}  r-vertical-field" data-fieldname="sup_fechanot" data-signal-error-for="sup_fechanot{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="sup_fechanot" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_sup_fechanot}">
+		
+		{BEGIN sup_fechanot_label}{$label q_info_cont sup_fechanot }{END sup_fechanot_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$sup_fechanot_value}	</div>
+
+		
+</div>
+
+
+{END sup_fechanot_fieldblock}
+											
+{BEGIN sup_mailnot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_mailnot}  r-vertical-field" data-fieldname="sup_mailnot" data-signal-error-for="sup_mailnot{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="sup_mailnot" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_sup_mailnot}">
+		
+		{BEGIN sup_mailnot_label}{$label q_info_cont sup_mailnot }{END sup_mailnot_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$sup_mailnot_value}	</div>
+
+		
+</div>
+
+
+{END sup_mailnot_fieldblock}
+											
+{BEGIN sup_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_status}  r-vertical-field" data-fieldname="sup_status" data-signal-error-for="sup_status{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="sup_status" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_sup_status}">
+		
+		{BEGIN sup_status_label}{$label q_info_cont sup_status }{END sup_status_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$sup_status_value}	</div>
+
+		
+</div>
+
+
+{END sup_status_fieldblock}
+											
+{BEGIN idusrglobal_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idusrglobal_fk}  r-vertical-field" data-fieldname="idusrglobal_fk" data-signal-error-for="idusrglobal_fk{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="idusrglobal_fk" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_idusrglobal_fk}">
+		
+		{BEGIN idusrglobal_fk_label}{$label q_info_cont idusrglobal_fk }{END idusrglobal_fk_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$idusrglobal_fk_value}	</div>
+
+		
+</div>
+
+
+{END idusrglobal_fk_fieldblock}
+											
+{BEGIN contractor_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_name}  r-vertical-field" data-fieldname="contractor_name" data-signal-error-for="contractor_name{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="contractor_name" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_name}">
+		
+		{BEGIN contractor_name_label}{$label q_info_cont contractor_name }{END contractor_name_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$contractor_name_value}	</div>
+
+		
+</div>
+
+
+{END contractor_name_fieldblock}
+											
+{BEGIN contractor_lname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_lname}  r-vertical-field" data-fieldname="contractor_lname" data-signal-error-for="contractor_lname{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="contractor_lname" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_lname}">
+		
+		{BEGIN contractor_lname_label}{$label q_info_cont contractor_lname }{END contractor_lname_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$contractor_lname_value}	</div>
+
+		
+</div>
+
+
+{END contractor_lname_fieldblock}
+											
+{BEGIN contractor_nombresfull_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_nombresfull}  r-vertical-field" data-fieldname="contractor_nombresfull" data-signal-error-for="contractor_nombresfull{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="contractor_nombresfull" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_nombresfull}">
+		
+		{BEGIN contractor_nombresfull_label}{$label q_info_cont contractor_nombresfull }{END contractor_nombresfull_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$contractor_nombresfull_value}	</div>
+
+		
+</div>
+
+
+{END contractor_nombresfull_fieldblock}
+											
+{BEGIN contractor_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email}  r-vertical-field" data-fieldname="contractor_email" data-signal-error-for="contractor_email{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="contractor_email" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_email}">
+		
+		{BEGIN contractor_email_label}{$label q_info_cont contractor_email }{END contractor_email_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$contractor_email_value}	</div>
+
+		
+</div>
+
+
+{END contractor_email_fieldblock}
+											
+{BEGIN contractor_email_mincit_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contractor_email_mincit}  r-vertical-field" data-fieldname="contractor_email_mincit" data-signal-error-for="contractor_email_mincit{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="contractor_email_mincit" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_contractor_email_mincit}">
+		
+		{BEGIN contractor_email_mincit_label}{$label q_info_cont contractor_email_mincit }{END contractor_email_mincit_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$contractor_email_mincit_value}	</div>
+
+		
+</div>
+
+
+{END contractor_email_mincit_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
