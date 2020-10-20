@@ -201,14 +201,16 @@ $tdatahoja_ruta_2020_files[".warnLeavingPages"] = true;
 
 
 
-$tstrOrderBy = "";
+$tstrOrderBy = "ORDER BY hr_tipo_doc";
 if(strlen($tstrOrderBy) && strtolower(substr($tstrOrderBy,0,8))!="order by")
 	$tstrOrderBy = "order by ".$tstrOrderBy;
 $tdatahoja_ruta_2020_files[".strOrderBy"] = $tstrOrderBy;
 
 $tdatahoja_ruta_2020_files[".orderindexes"] = array();
+	$tdatahoja_ruta_2020_files[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "hr_tipo_doc");
 
-$tdatahoja_ruta_2020_files[".sqlHead"] = "SELECT file_hr_id,  	hr_id_fk,  	hr_tipo_doc,  	hr_file,  	sys_user,  	sys_date";
+
+$tdatahoja_ruta_2020_files[".sqlHead"] = "SELECT file_hr_id,  hr_id_fk,  hr_tipo_doc,  hr_file,  sys_user,  sys_date";
 $tdatahoja_ruta_2020_files[".sqlFrom"] = "FROM hoja_ruta_2020_files";
 $tdatahoja_ruta_2020_files[".sqlWhereExpr"] = "";
 $tdatahoja_ruta_2020_files[".sqlTail"] = "";
@@ -1187,6 +1189,70 @@ $masterTablesData["hoja_ruta_2020_files"] = array();
 				$masterTablesData["hoja_ruta_2020_files"][2]["detailKeys"] = array();
 	$masterTablesData["hoja_ruta_2020_files"][2]["detailKeys"][]="hr_id_fk";
 		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pnc";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pnc";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_files"][3] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_files"][3]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][3]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_files"][3]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][3]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pn0";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pn0";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_files"][4] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_files"][4]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][4]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_files"][4]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][4]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pnc1";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pnc1";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_files"][5] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_files"][5]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][5]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_files"][5]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][5]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pn3";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pn3";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_files"][6] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_files"][6]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][6]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_files"][6]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_files"][6]["detailKeys"][]="hr_id_fk";
+		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 
@@ -1205,10 +1271,10 @@ function createSqlQuery_hoja_ruta_2020_files()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "file_hr_id,  	hr_id_fk,  	hr_tipo_doc,  	hr_file,  	sys_user,  	sys_date";
+$proto0["m_strFieldList"] = "file_hr_id,  hr_id_fk,  hr_tipo_doc,  hr_file,  sys_user,  sys_date";
 $proto0["m_strFrom"] = "FROM hoja_ruta_2020_files";
 $proto0["m_strWhere"] = "";
-$proto0["m_strOrderBy"] = "";
+$proto0["m_strOrderBy"] = "ORDER BY hr_tipo_doc";
 	
 								;
 			$proto0["cipherer"] = null;
@@ -1369,6 +1435,19 @@ $obj = new SQLFromListItem($proto18);
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
+												$proto22=array();
+						$obj = new SQLField(array(
+	"m_strName" => "hr_tipo_doc",
+	"m_strTable" => "hoja_ruta_2020_files",
+	"m_srcTableName" => "hoja_ruta_2020_files"
+));
+
+$proto22["m_column"]=$obj;
+$proto22["m_bAsc"] = 1;
+$proto22["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto22);
+
+$proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="hoja_ruta_2020_files";		
 $obj = new SQLQuery($proto0);
 

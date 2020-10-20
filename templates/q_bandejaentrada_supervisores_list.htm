@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_sup_status}</span>
 						</div>
 		{END searchCtrlBlock_sup_status}
+																{BEGIN searchCtrlBlock_Username}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Username}" {$filterRow_attrs_Username}>
+			<label>{$label q_bandejaentrada_supervisores Username }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Username}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Username}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Username}</span>
+						</div>
+		{END searchCtrlBlock_Username}
 																{BEGIN searchCtrlBlock_cont_modifica}
 
 
@@ -1074,6 +1087,9 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_modifica"]:before {
 		content: "{$label q_bandejaentrada_supervisores cont_modifica}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Username"]:before {
+		content: "{$label q_bandejaentrada_supervisores Username}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
@@ -1107,7 +1123,7 @@
 	 
 		{BEGIN cont_nit_contra_ta_fieldheadercolumn}
 	{BEGIN cont_nit_contra_ta_fieldheader}
-	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
+	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
 	{$label q_bandejaentrada_supervisores cont_nit_contra_ta }	{$arrow_icon_cont_nit_contra_ta}
 	</SPAN>
 	{END cont_nit_contra_ta_fieldheader}
@@ -1134,7 +1150,7 @@
 	 
 		{BEGIN contractor_nombresfull_fieldheadercolumn}
 	{BEGIN contractor_nombresfull_fieldheader}
-	<SPAN {$contractor_nombresfull_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_nombresfull">
+	<SPAN {$contractor_nombresfull_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contractor_nombresfull">
 	{$label q_bandejaentrada_supervisores contractor_nombresfull }	{$arrow_icon_contractor_nombresfull}
 	</SPAN>
 	{END contractor_nombresfull_fieldheader}
@@ -1161,7 +1177,7 @@
 	 
 		{BEGIN cont_estado_fieldheadercolumn}
 	{BEGIN cont_estado_fieldheader}
-	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
+	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
 	{$label q_bandejaentrada_supervisores cont_estado }	{$arrow_icon_cont_estado}
 	</SPAN>
 	{END cont_estado_fieldheader}
@@ -1188,7 +1204,7 @@
 	 
 		{BEGIN numcontrato_fieldheadercolumn}
 	{BEGIN numcontrato_fieldheader}
-	<SPAN {$numcontrato_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numcontrato">
+	<SPAN {$numcontrato_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numcontrato">
 	{$label q_bandejaentrada_supervisores numcontrato }	{$arrow_icon_numcontrato}
 	</SPAN>
 	{END numcontrato_fieldheader}
@@ -1215,7 +1231,7 @@
 	 
 		{BEGIN cont_ano_fieldheadercolumn}
 	{BEGIN cont_ano_fieldheader}
-	<SPAN {$cont_ano_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano">
+	<SPAN {$cont_ano_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano">
 	{$label q_bandejaentrada_supervisores cont_ano }	{$arrow_icon_cont_ano}
 	</SPAN>
 	{END cont_ano_fieldheader}
@@ -1242,7 +1258,7 @@
 	 
 		{BEGIN documento_id_fieldheadercolumn}
 	{BEGIN documento_id_fieldheader}
-	<SPAN {$documento_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documento_id">
+	<SPAN {$documento_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documento_id">
 	{$label q_bandejaentrada_supervisores documento_id }	{$arrow_icon_documento_id}
 	</SPAN>
 	{END documento_id_fieldheader}
@@ -1269,7 +1285,7 @@
 	 
 		{BEGIN nombres_fieldheadercolumn}
 	{BEGIN nombres_fieldheader}
-	<SPAN {$nombres_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombres">
+	<SPAN {$nombres_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombres">
 	{$label q_bandejaentrada_supervisores nombres }	{$arrow_icon_nombres}
 	</SPAN>
 	{END nombres_fieldheader}
@@ -1296,7 +1312,7 @@
 	 
 		{BEGIN apellidos_fieldheadercolumn}
 	{BEGIN apellidos_fieldheader}
-	<SPAN {$apellidos_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apellidos">
+	<SPAN {$apellidos_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apellidos">
 	{$label q_bandejaentrada_supervisores apellidos }	{$arrow_icon_apellidos}
 	</SPAN>
 	{END apellidos_fieldheader}
@@ -1323,7 +1339,7 @@
 	 
 		{BEGIN cargo_id_fieldheadercolumn}
 	{BEGIN cargo_id_fieldheader}
-	<SPAN {$cargo_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cargo_id">
+	<SPAN {$cargo_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cargo_id">
 	{$label q_bandejaentrada_supervisores cargo_id }	{$arrow_icon_cargo_id}
 	</SPAN>
 	{END cargo_id_fieldheader}
@@ -1350,7 +1366,7 @@
 	 
 		{BEGIN dependencia_id_fieldheadercolumn}
 	{BEGIN dependencia_id_fieldheader}
-	<SPAN {$dependencia_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dependencia_id">
+	<SPAN {$dependencia_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dependencia_id">
 	{$label q_bandejaentrada_supervisores dependencia_id }	{$arrow_icon_dependencia_id}
 	</SPAN>
 	{END dependencia_id_fieldheader}
@@ -1377,7 +1393,7 @@
 	 
 		{BEGIN PLAZO_fieldheadercolumn}
 	{BEGIN PLAZO_fieldheader}
-	<SPAN {$PLAZO_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="PLAZO">
+	<SPAN {$PLAZO_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="PLAZO">
 	{$label q_bandejaentrada_supervisores PLAZO }	{$arrow_icon_PLAZO}
 	</SPAN>
 	{END PLAZO_fieldheader}
@@ -1404,7 +1420,7 @@
 	 
 		{BEGIN nombresupfull_fieldheadercolumn}
 	{BEGIN nombresupfull_fieldheader}
-	<SPAN {$nombresupfull_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombresupfull">
+	<SPAN {$nombresupfull_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombresupfull">
 	{$label q_bandejaentrada_supervisores nombresupfull }	{$arrow_icon_nombresupfull}
 	</SPAN>
 	{END nombresupfull_fieldheader}
@@ -1431,7 +1447,7 @@
 	 
 		{BEGIN prenumero_fieldheadercolumn}
 	{BEGIN prenumero_fieldheader}
-	<SPAN {$prenumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prenumero">
+	<SPAN {$prenumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prenumero">
 	{$label q_bandejaentrada_supervisores prenumero }	{$arrow_icon_prenumero}
 	</SPAN>
 	{END prenumero_fieldheader}
@@ -1458,7 +1474,7 @@
 	 
 		{BEGIN numregistro_fieldheadercolumn}
 	{BEGIN numregistro_fieldheader}
-	<SPAN {$numregistro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numregistro">
+	<SPAN {$numregistro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numregistro">
 	{$label q_bandejaentrada_supervisores numregistro }	{$arrow_icon_numregistro}
 	</SPAN>
 	{END numregistro_fieldheader}
@@ -1485,7 +1501,7 @@
 	 
 		{BEGIN cont_unspsc_fieldheadercolumn}
 	{BEGIN cont_unspsc_fieldheader}
-	<SPAN {$cont_unspsc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_unspsc">
+	<SPAN {$cont_unspsc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_unspsc">
 	{$label q_bandejaentrada_supervisores cont_unspsc }	{$arrow_icon_cont_unspsc}
 	</SPAN>
 	{END cont_unspsc_fieldheader}
@@ -1512,7 +1528,7 @@
 	 
 		{BEGIN cont_tipo_rubro_fieldheadercolumn}
 	{BEGIN cont_tipo_rubro_fieldheader}
-	<SPAN {$cont_tipo_rubro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
+	<SPAN {$cont_tipo_rubro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
 	{$label q_bandejaentrada_supervisores cont_tipo_rubro }	{$arrow_icon_cont_tipo_rubro}
 	</SPAN>
 	{END cont_tipo_rubro_fieldheader}
@@ -1539,7 +1555,7 @@
 	 
 		{BEGIN cont_tipopre_fieldheadercolumn}
 	{BEGIN cont_tipopre_fieldheader}
-	<SPAN {$cont_tipopre_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipopre">
+	<SPAN {$cont_tipopre_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipopre">
 	{$label q_bandejaentrada_supervisores cont_tipopre }	{$arrow_icon_cont_tipopre}
 	</SPAN>
 	{END cont_tipopre_fieldheader}
@@ -1566,7 +1582,7 @@
 	 
 		{BEGIN cont_causalc_fieldheadercolumn}
 	{BEGIN cont_causalc_fieldheader}
-	<SPAN {$cont_causalc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_causalc">
+	<SPAN {$cont_causalc_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_causalc">
 	{$label q_bandejaentrada_supervisores cont_causalc }	{$arrow_icon_cont_causalc}
 	</SPAN>
 	{END cont_causalc_fieldheader}
@@ -1593,7 +1609,7 @@
 	 
 		{BEGIN cont_objeto_fieldheadercolumn}
 	{BEGIN cont_objeto_fieldheader}
-	<SPAN {$cont_objeto_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_objeto">
+	<SPAN {$cont_objeto_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_objeto">
 	{$label q_bandejaentrada_supervisores cont_objeto }	{$arrow_icon_cont_objeto}
 	</SPAN>
 	{END cont_objeto_fieldheader}
@@ -1620,7 +1636,7 @@
 	 
 		{BEGIN cont_obligaciones_fieldheadercolumn}
 	{BEGIN cont_obligaciones_fieldheader}
-	<SPAN {$cont_obligaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_obligaciones">
+	<SPAN {$cont_obligaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_obligaciones">
 	{$label q_bandejaentrada_supervisores cont_obligaciones }	{$arrow_icon_cont_obligaciones}
 	</SPAN>
 	{END cont_obligaciones_fieldheader}
@@ -1647,7 +1663,7 @@
 	 
 		{BEGIN cont_plazo_fieldheadercolumn}
 	{BEGIN cont_plazo_fieldheader}
-	<SPAN {$cont_plazo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo">
+	<SPAN {$cont_plazo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo">
 	{$label q_bandejaentrada_supervisores cont_plazo }	{$arrow_icon_cont_plazo}
 	</SPAN>
 	{END cont_plazo_fieldheader}
@@ -1674,7 +1690,7 @@
 	 
 		{BEGIN ctb_tipo_nombre_fieldheadercolumn}
 	{BEGIN ctb_tipo_nombre_fieldheader}
-	<SPAN {$ctb_tipo_nombre_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ctb_tipo_nombre">
+	<SPAN {$ctb_tipo_nombre_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ctb_tipo_nombre">
 	{$label q_bandejaentrada_supervisores ctb_tipo_nombre }	{$arrow_icon_ctb_tipo_nombre}
 	</SPAN>
 	{END ctb_tipo_nombre_fieldheader}
@@ -1701,7 +1717,7 @@
 	 
 		{BEGIN nombre_cargo_fieldheadercolumn}
 	{BEGIN nombre_cargo_fieldheader}
-	<SPAN {$nombre_cargo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cargo">
+	<SPAN {$nombre_cargo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cargo">
 	{$label q_bandejaentrada_supervisores nombre_cargo }	{$arrow_icon_nombre_cargo}
 	</SPAN>
 	{END nombre_cargo_fieldheader}
@@ -1728,7 +1744,7 @@
 	 
 		{BEGIN nombre_dependencia_fieldheadercolumn}
 	{BEGIN nombre_dependencia_fieldheader}
-	<SPAN {$nombre_dependencia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_dependencia">
+	<SPAN {$nombre_dependencia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_dependencia">
 	{$label q_bandejaentrada_supervisores nombre_dependencia }	{$arrow_icon_nombre_dependencia}
 	</SPAN>
 	{END nombre_dependencia_fieldheader}
@@ -1755,7 +1771,7 @@
 	 
 		{BEGIN id_depto_superior_fieldheadercolumn}
 	{BEGIN id_depto_superior_fieldheader}
-	<SPAN {$id_depto_superior_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_depto_superior">
+	<SPAN {$id_depto_superior_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_depto_superior">
 	{$label q_bandejaentrada_supervisores id_depto_superior }	{$arrow_icon_id_depto_superior}
 	</SPAN>
 	{END id_depto_superior_fieldheader}
@@ -1782,7 +1798,7 @@
 	 
 		{BEGIN Departamento_superior_fieldheadercolumn}
 	{BEGIN Departamento_superior_fieldheader}
-	<SPAN {$Departamento_superior_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Departamento_superior">
+	<SPAN {$Departamento_superior_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Departamento_superior">
 	{$label q_bandejaentrada_supervisores Departamento_superior }	{$arrow_icon_Departamento_superior}
 	</SPAN>
 	{END Departamento_superior_fieldheader}
@@ -1809,7 +1825,7 @@
 	 
 		{BEGIN cont_numpoliza_fieldheadercolumn}
 	{BEGIN cont_numpoliza_fieldheader}
-	<SPAN {$cont_numpoliza_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
+	<SPAN {$cont_numpoliza_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
 	{$label q_bandejaentrada_supervisores cont_numpoliza }	{$arrow_icon_cont_numpoliza}
 	</SPAN>
 	{END cont_numpoliza_fieldheader}
@@ -1836,7 +1852,7 @@
 	 
 		{BEGIN cont_secop_proceso_fieldheadercolumn}
 	{BEGIN cont_secop_proceso_fieldheader}
-	<SPAN {$cont_secop_proceso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso">
+	<SPAN {$cont_secop_proceso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso">
 	{$label q_bandejaentrada_supervisores cont_secop_proceso }	{$arrow_icon_cont_secop_proceso}
 	</SPAN>
 	{END cont_secop_proceso_fieldheader}
@@ -1863,7 +1879,7 @@
 	 
 		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
 	{BEGIN cont_fecha_aprobgarantia_fieldheader}
-	<SPAN {$cont_fecha_aprobgarantia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
+	<SPAN {$cont_fecha_aprobgarantia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
 	{$label q_bandejaentrada_supervisores cont_fecha_aprobgarantia }	{$arrow_icon_cont_fecha_aprobgarantia}
 	</SPAN>
 	{END cont_fecha_aprobgarantia_fieldheader}
@@ -1890,7 +1906,7 @@
 	 
 		{BEGIN cont_fechaapertura_fieldheadercolumn}
 	{BEGIN cont_fechaapertura_fieldheader}
-	<SPAN {$cont_fechaapertura_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechaapertura">
+	<SPAN {$cont_fechaapertura_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechaapertura">
 	{$label q_bandejaentrada_supervisores cont_fechaapertura }	{$arrow_icon_cont_fechaapertura}
 	</SPAN>
 	{END cont_fechaapertura_fieldheader}
@@ -1917,7 +1933,7 @@
 	 
 		{BEGIN cont_munejec_fieldheadercolumn}
 	{BEGIN cont_munejec_fieldheader}
-	<SPAN {$cont_munejec_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec">
+	<SPAN {$cont_munejec_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec">
 	{$label q_bandejaentrada_supervisores cont_munejec }	{$arrow_icon_cont_munejec}
 	</SPAN>
 	{END cont_munejec_fieldheader}
@@ -1944,7 +1960,7 @@
 	 
 		{BEGIN cont_cesion_fieldheadercolumn}
 	{BEGIN cont_cesion_fieldheader}
-	<SPAN {$cont_cesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
+	<SPAN {$cont_cesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
 	{$label q_bandejaentrada_supervisores cont_cesion }	{$arrow_icon_cont_cesion}
 	</SPAN>
 	{END cont_cesion_fieldheader}
@@ -1971,7 +1987,7 @@
 	 
 		{BEGIN cont_modifica_fieldheadercolumn}
 	{BEGIN cont_modifica_fieldheader}
-	<SPAN {$cont_modifica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
+	<SPAN {$cont_modifica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
 	{$label q_bandejaentrada_supervisores cont_modifica }	{$arrow_icon_cont_modifica}
 	</SPAN>
 	{END cont_modifica_fieldheader}
@@ -1980,6 +1996,33 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Username_class}
+			"
+
+			data-field="Username"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Username_fieldheadercolumn}
+	{BEGIN Username_fieldheader}
+	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
+	{$label q_bandejaentrada_supervisores Username }	{$arrow_icon_Username}
+	</SPAN>
+	{END Username_fieldheader}
+{END Username_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
 							</tr>
 					 
 					 
@@ -2754,6 +2797,29 @@
 {END cont_modifica_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Username_class}
+			"
+
+			data-field="Username"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Username_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username" data-default-width >
+{$Username_value}
+</span>
+{END Username_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
 							</tr>
 					 
 					
@@ -3297,6 +3363,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="q_bandejaentrada_supervisores_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
 							</tr>
 					
 					</tfoot>

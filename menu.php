@@ -43,6 +43,14 @@ include_once(getabspath("include/ep_op_temp_events.php"));
 $tableEvents["ep_op_temp"] = new eventclass_ep_op_temp;
 include_once(getabspath("include/hoja_ruta_2020_pn2_events.php"));
 $tableEvents["hoja_ruta_2020_pn2"] = new eventclass_hoja_ruta_2020_pn2;
+include_once(getabspath("include/hoja_ruta_2020_pnc_events.php"));
+$tableEvents["hoja_ruta_2020_pnc"] = new eventclass_hoja_ruta_2020_pnc;
+include_once(getabspath("include/hoja_ruta_2020_pn0_events.php"));
+$tableEvents["hoja_ruta_2020_pn0"] = new eventclass_hoja_ruta_2020_pn0;
+include_once(getabspath("include/hoja_ruta_2020_pnc1_events.php"));
+$tableEvents["hoja_ruta_2020_pnc1"] = new eventclass_hoja_ruta_2020_pnc1;
+include_once(getabspath("include/hoja_ruta_2020_pn3_events.php"));
+$tableEvents["hoja_ruta_2020_pn3"] = new eventclass_hoja_ruta_2020_pn3;
 
 $xt = new Xtempl();
 

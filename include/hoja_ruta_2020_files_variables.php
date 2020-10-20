@@ -4,7 +4,7 @@ $_SESSION["OwnerID"] = $_SESSION["_".$strTableName."_OwnerID"];
 
 $strOriginalTableName="hoja_ruta_2020_files";
 
-$gstrOrderBy="";
+$gstrOrderBy="ORDER BY hr_tipo_doc";
 if(strlen($gstrOrderBy) && strtolower(substr($gstrOrderBy,0,8))!="order by")
 	$gstrOrderBy="order by ".$gstrOrderBy;
 

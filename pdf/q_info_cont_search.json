@@ -272,6 +272,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field51}","text":{$cont_modifica_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field52}","text":{$Username_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

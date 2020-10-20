@@ -1384,6 +1384,31 @@
 </div>
 
 {END cont_modifica_fieldblock}
+											
+{BEGIN Username_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Username}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Username" 
+	
+	data-signal-error-for="Username{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field52" {$item_integrated_search_field52} data-pageid="{$pageid}" data-field="Username" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Username}">
+		{$label q_info_cont Username }	</label>
+	<div class="r-search-option">
+		{$searchtype_Username}
+	</div>
+	<div class="r-search-field">
+		{$Username_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Username_editcontrol1}
+	</div>
+	
+</div>
+
+{END Username_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

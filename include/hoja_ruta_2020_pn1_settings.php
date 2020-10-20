@@ -354,7 +354,7 @@ $tdatahoja_ruta_2020_pn1[".orderindexes"] = array();
 	$tdatahoja_ruta_2020_pn1[".orderindexes"][] = array(1, (0 ? "ASC" : "DESC"), "hr_id");
 
 
-$tdatahoja_ruta_2020_pn1[".sqlHead"] = "SELECT hr_id,  hr_id as hr_id_qr,  hr_concepto_id,  id_cont_fk,  hr_anio,  ctrlpagos_id_fk,  cxc_id_fk,  obligacion,  id_informe_fk,  hr_nit_contra_ta,  hr_nit_contra_ta as nombrecont,  hr_asunto,  hr_valor,  hr_fechaingreso,  hr_fecha_salida,  hr_estado_firma,  hr_estado_numero,  hr_estado_fecha,  hr_estado_file,  hr_estado_user,  sys_user,  sys_user_actual,  sys_fecha_reg,  hr_file,  not_status,  not_time,  not_user,  not_date,  not_mail,  not_msg,  `sysdate`,  evento_type_id_fk,  user_from,  last_act_user,  hr_aprob_estado,  hr_aprob_fecha,  hr_aprob_user,  tercero_email_a,  tercero_email_b,  anio,  mes,  sys_dep";
+$tdatahoja_ruta_2020_pn1[".sqlHead"] = "SELECT hr_id,  hr_id AS hr_id_qr,  hr_concepto_id,  id_cont_fk,  hr_anio,  ctrlpagos_id_fk,  cxc_id_fk,  obligacion,  id_informe_fk,  hr_nit_contra_ta,  hr_nit_contra_ta AS nombrecont,  hr_asunto,  hr_valor,  hr_fechaingreso,  hr_fecha_salida,  hr_estado_firma,  hr_estado_numero,  hr_estado_fecha,  hr_estado_file,  hr_estado_user,  sys_user,  sys_user_actual,  sys_fecha_reg,  hr_file,  not_status,  not_time,  not_user,  not_date,  not_mail,  not_msg,  `sysdate`,  evento_type_id_fk,  user_from,  last_act_user,  hr_aprob_estado,  hr_aprob_fecha,  hr_aprob_user,  tercero_email_a,  tercero_email_b,  anio,  mes,  sys_dep";
 $tdatahoja_ruta_2020_pn1[".sqlFrom"] = "FROM hoja_ruta_2020";
 $tdatahoja_ruta_2020_pn1[".sqlWhereExpr"] = "(hr_concepto_id = 8)";
 $tdatahoja_ruta_2020_pn1[".sqlTail"] = "";
@@ -610,27 +610,6 @@ $tdatahoja_ruta_2020_pn1[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["list"] = $vdata;
-	$vdata = array("ViewFormat" => "QRCode");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["print"] = $vdata;
 	$vdata = array("ViewFormat" => "");
 
 	
@@ -6626,7 +6605,7 @@ function createSqlQuery_hoja_ruta_2020_pn1()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "hr_id,  hr_id as hr_id_qr,  hr_concepto_id,  id_cont_fk,  hr_anio,  ctrlpagos_id_fk,  cxc_id_fk,  obligacion,  id_informe_fk,  hr_nit_contra_ta,  hr_nit_contra_ta as nombrecont,  hr_asunto,  hr_valor,  hr_fechaingreso,  hr_fecha_salida,  hr_estado_firma,  hr_estado_numero,  hr_estado_fecha,  hr_estado_file,  hr_estado_user,  sys_user,  sys_user_actual,  sys_fecha_reg,  hr_file,  not_status,  not_time,  not_user,  not_date,  not_mail,  not_msg,  `sysdate`,  evento_type_id_fk,  user_from,  last_act_user,  hr_aprob_estado,  hr_aprob_fecha,  hr_aprob_user,  tercero_email_a,  tercero_email_b,  anio,  mes,  sys_dep";
+$proto0["m_strFieldList"] = "hr_id,  hr_id AS hr_id_qr,  hr_concepto_id,  id_cont_fk,  hr_anio,  ctrlpagos_id_fk,  cxc_id_fk,  obligacion,  id_informe_fk,  hr_nit_contra_ta,  hr_nit_contra_ta AS nombrecont,  hr_asunto,  hr_valor,  hr_fechaingreso,  hr_fecha_salida,  hr_estado_firma,  hr_estado_numero,  hr_estado_fecha,  hr_estado_file,  hr_estado_user,  sys_user,  sys_user_actual,  sys_fecha_reg,  hr_file,  not_status,  not_time,  not_user,  not_date,  not_mail,  not_msg,  `sysdate`,  evento_type_id_fk,  user_from,  last_act_user,  hr_aprob_estado,  hr_aprob_fecha,  hr_aprob_user,  tercero_email_a,  tercero_email_b,  anio,  mes,  sys_dep";
 $proto0["m_strFrom"] = "FROM hoja_ruta_2020";
 $proto0["m_strWhere"] = "(hr_concepto_id = 8)";
 $proto0["m_strOrderBy"] = "ORDER BY hr_id DESC";
@@ -7284,6 +7263,7 @@ $proto91["m_columns"][] = "hr_estado_fecha";
 $proto91["m_columns"][] = "hr_estado_file";
 $proto91["m_columns"][] = "hr_estado_user";
 $proto91["m_columns"][] = "sys_user";
+$proto91["m_columns"][] = "sys_sup";
 $proto91["m_columns"][] = "sys_dep";
 $proto91["m_columns"][] = "sys_user_actual";
 $proto91["m_columns"][] = "sys_fecha_reg";

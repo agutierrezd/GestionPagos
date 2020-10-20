@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_idusrglobal}</span>
 						</div>
 		{END searchCtrlBlock_idusrglobal}
+																{BEGIN searchCtrlBlock_usr_status_nomina}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_status_nomina}" {$filterRow_attrs_usr_status_nomina}>
+			<label>{$label q_buscador_usuarios_all usr_status_nomina }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_status_nomina}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_status_nomina}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status_nomina}</span>
+						</div>
+		{END searchCtrlBlock_usr_status_nomina}
 																{BEGIN searchCtrlBlock_usr_nombresfull}
 
 
@@ -511,6 +524,22 @@
 		Búsqueda avanzada		
 		</a>
 	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
 					</ul>
 	</span>
 </span>
@@ -629,6 +658,9 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_nombresfull"]:before {
 		content: "{$label q_buscador_usuarios_all usr_nombresfull}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_status_nomina"]:before {
+		content: "{$label q_buscador_usuarios_all usr_status_nomina}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
@@ -662,7 +694,7 @@
 	 
 		{BEGIN Username_fieldheadercolumn}
 	{BEGIN Username_fieldheader}
-	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
+	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
 	{$label q_buscador_usuarios_all Username }	{$arrow_icon_Username}
 	</SPAN>
 	{END Username_fieldheader}
@@ -716,7 +748,7 @@
 	 
 		{BEGIN usr_email_fieldheadercolumn}
 	{BEGIN usr_email_fieldheader}
-	<SPAN {$usr_email_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_email">
+	<SPAN {$usr_email_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_email">
 	{$label q_buscador_usuarios_all usr_email }	{$arrow_icon_usr_email}
 	</SPAN>
 	{END usr_email_fieldheader}
@@ -833,6 +865,33 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$usr_status_nomina_class}
+			"
+
+			data-field="usr_status_nomina"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_status_nomina_fieldheadercolumn}
+	{BEGIN usr_status_nomina_fieldheader}
+	<SPAN {$usr_status_nomina_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_status_nomina">
+	{$label q_buscador_usuarios_all usr_status_nomina }	{$arrow_icon_usr_status_nomina}
+	</SPAN>
+	{END usr_status_nomina_fieldheader}
+{END usr_status_nomina_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
 							</tr>
 					 
 					 
@@ -1009,6 +1068,29 @@
 {END usr_personalid_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$usr_status_nomina_class}
+			"
+
+			data-field="usr_status_nomina"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_status_nomina_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_status_nomina" data-default-width >
+{$usr_status_nomina_value}
+</span>
+{END usr_status_nomina_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
 							</tr>
 					 
 					
@@ -1136,6 +1218,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="q_buscador_usuarios_all_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

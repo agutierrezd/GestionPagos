@@ -955,6 +955,11 @@ function GetLWWhere($field, $ptype, $table = "")
 		$strWhere = " id= 23 ";
 		return $strWhere;
 	}
+		if($table=="hoja_ruta_2020_pn" && $field=="sys_user")
+	{
+		$strWhere = " usr_status_nomina = 1";
+		return $strWhere;
+	}
 		if($table=="hoja_ruta_2020_pn" && $field=="evento_type_id_fk")
 	{
 		$strWhere = " evento_type_id = 14 ";
@@ -963,6 +968,41 @@ function GetLWWhere($field, $ptype, $table = "")
 		if($table=="hoja_ruta_2020_files" && $field=="hr_tipo_doc")
 	{
 		$strWhere = " anexos_clase = 8 ";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pnc" && $field=="sys_user")
+	{
+		$strWhere = " global_rol_contratos = 3 ";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pnc" && $field=="evento_type_id_fk")
+	{
+		$strWhere = " evento_type_id = 14 ";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pn0" && $field=="sys_user")
+	{
+		$strWhere = " usr_status_nomina = 0";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pn0" && $field=="evento_type_id_fk")
+	{
+		$strWhere = " evento_group_id = 99 ";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pn0" && $field=="sys_dep")
+	{
+		$strWhere = " id = 23";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pnc1" && $field=="sys_user")
+	{
+		$strWhere = " global_rol_contratos = 3 ";
+		return $strWhere;
+	}
+		if($table=="hoja_ruta_2020_pnc1" && $field=="evento_type_id_fk")
+	{
+		$strWhere = " evento_type_id = 14 ";
 		return $strWhere;
 	}
 	return "";
@@ -1072,6 +1112,98 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="hr_nit_contra_ta")
+	{
+		return $_SESSION["DOCID"];
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="hr_fechaingreso")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="evento_type_id_fk")
+	{
+		return 14;
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="user_from")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="hr_fechaingreso")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="evento_type_id_fk")
+	{
+		return 68;
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="hr_nit_contra_ta")
+	{
+		return $_SESSION["DOCID"];
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="hr_fechaingreso")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="evento_type_id_fk")
+	{
+		return 14;
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="user_from")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="hr_fechaingreso")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
 	return "";
 }
 
@@ -1164,6 +1296,82 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
 				if($table=="hoja_ruta_2020_pn2" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="hr_nit_contra_ta")
+	{
+		return $_SESSION["DOCID"];
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="evento_type_id_fk")
+	{
+		return 14;
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="user_from")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="hoja_ruta_2020_pnc" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="evento_type_id_fk")
+	{
+		return 68;
+	}
+				if($table=="hoja_ruta_2020_pn0" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="hr_nit_contra_ta")
+	{
+		return $_SESSION["DOCID"];
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="evento_type_id_fk")
+	{
+		return 14;
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="user_from")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="hoja_ruta_2020_pnc1" && $field=="last_act_user")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="hr_concepto_id")
+	{
+		return 8;
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="not_date")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="hoja_ruta_2020_pn3" && $field=="last_act_user")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}

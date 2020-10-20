@@ -1,0 +1,315 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel hoja_ruta_2020_pn3 search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$hr_id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$hr_concepto_id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$id_cont_fk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$hr_anio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$ctrlpagos_id_fk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$cxc_id_fk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$obligacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$id_informe_fk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$hr_nit_contra_ta_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$hr_asunto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$hr_valor_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$hr_fechaingreso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field12}","text":{$hr_fecha_salida_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$hr_estado_firma_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$hr_estado_numero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field15}","text":{$hr_estado_fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field16}","text":{$hr_estado_file_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field17}","text":{$hr_estado_user_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field18}","text":{$sys_user_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field19}","text":{$sys_user_actual_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field20}","text":{$sys_fecha_reg_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field21}","text":{$hr_file_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field22}","text":{$not_status_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field23}","text":{$not_time_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field24}","text":{$not_user_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field25}","text":{$not_date_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field26}","text":{$not_mail_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field27}","text":{$not_msg_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field28}","text":{$sysdate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field29}","text":{$evento_type_id_fk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field30}","text":{$user_from_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field32}","text":{$last_act_user_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field33}","text":{$hr_aprob_estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field34}","text":{$hr_aprob_fecha_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field35}","text":{$hr_aprob_user_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field31}","text":{$tercero_email_a_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field36}","text":{$tercero_email_b_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field37}","text":{$anio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field38}","text":{$mes_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field39}","text":{$sys_dep_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field40}","text":{$hr_id_qr_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field41}","text":{$nombrecont_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field42}","text":{$sys_sup_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

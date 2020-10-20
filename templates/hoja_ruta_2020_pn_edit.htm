@@ -91,6 +91,10 @@
 					Anexos				</a>
 			</li>
 										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section3{$pageid}">
+					Información de contrato				</a>
+			</li>
+										<li role="presentation" class="">
 				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
 									</a>
 			</li>
@@ -614,6 +618,35 @@
 {END details_hoja_ruta_2020_files}
 	
 				{END section2_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section3{$pageid}"> 
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_q_info_cont}
+<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption q_info_cont }				
+							<span>
+					{$detailslButtons_q_info_cont}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_q_info_cont}
+		</div>
+	</div>
+</div>
+{END details_q_info_cont}
+	
+				{END section3_block}
 						</div>
 					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
 			{BEGIN section1_block}

@@ -575,6 +575,67 @@ pdfDocument = {
 		
 		table: {
 			tableForm: true,
+			location: 'section3',
+			widths: ['*'],
+			body: [
+				[{text: 'Información de contrato', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section3_0}
+								'*', 
+								{END col_section3_0}
+													],
+						body: [
+								
+					{BEGIN row_section3_0}
+				[
+												{BEGIN cellblock_section3_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_q_info_cont}
+			{$displayDetailTable_q_info_cont }
+		{END details_q_info_cont},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section3_c1}
+											],
+				{END row_section3_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
 			location: 'section1',
 			widths: ['*'],
 			body: [

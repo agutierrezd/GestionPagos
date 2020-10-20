@@ -45,6 +45,20 @@
 </span>
 {END printtabheader}
 		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c4" data-pageid="{$pageid}"	{$cell_top_c4}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
 	</div>		
 {END top_block}
 									{BEGIN above-grid_block}
@@ -116,7 +130,7 @@
 	 
 		{BEGIN cont_cesion_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
 	{$label q_info_cont cont_cesion }	</span>
 {END cont_cesion_fieldheadercolumn}
 
@@ -141,13 +155,38 @@
 	 
 		{BEGIN cont_modifica_fieldheadercolumn}
  
-	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
 	{$label q_info_cont cont_modifica }	</span>
 {END cont_modifica_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Username_class}
+			"
+
+			data-field="Username"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Username_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
+	{$label q_info_cont Username }	</span>
+{END Username_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
 							</tr>
 					 
 					 
@@ -209,6 +248,29 @@
 {END cont_modifica_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Username_class}
+			"
+
+			data-field="Username"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Username_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username" data-default-width >
+{$Username_value}
+</span>
+{END Username_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
 							</tr>
 					 
 					
@@ -256,6 +318,22 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="q_info_cont_print1"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
 							</tr>
 					
 					</tfoot>

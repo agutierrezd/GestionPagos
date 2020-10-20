@@ -471,6 +471,26 @@ class AuditTrailTable
 		{
 			return true;
 		}
+		if($table=="hoja_ruta_2020_pnc")
+		{
+			return true;
+		}
+		if($table=="q_bandejaentrada_supervisores_c")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pn0")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pnc1")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pn3")
+		{
+			return true;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -945,6 +965,26 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="hoja_ruta_2020_pn2")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pnc")
+		{
+			return true;
+		}
+		if($table=="q_bandejaentrada_supervisores_c")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pn0")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pnc1")
+		{
+			return true;
+		}
+		if($table=="hoja_ruta_2020_pn3")
 		{
 			return true;
 		}

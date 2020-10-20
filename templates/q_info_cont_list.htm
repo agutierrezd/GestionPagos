@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_sup_status}</span>
 						</div>
 		{END searchCtrlBlock_sup_status}
+																{BEGIN searchCtrlBlock_Username}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Username}" {$filterRow_attrs_Username}>
+			<label>{$label q_info_cont Username }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Username}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Username}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Username}</span>
+						</div>
+		{END searchCtrlBlock_Username}
 																{BEGIN searchCtrlBlock_cont_modifica}
 
 
@@ -2857,11 +2870,20 @@
 	{$cell_grid_cell_label34}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert			"
+		r-align-right r-ori-vert				{$Username_class}
+			"
 
+			data-field="Username"
 	
 	data-cellId="grid_cell_label34" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
+
+	 
+		{BEGIN Username_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label24" {$item_grid_field_label24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
+	{$label q_info_cont Username }	</span>
+{END Username_fieldheadercolumn}
 
 	
 	</td>
@@ -2873,13 +2895,20 @@
 	{$cell_grid_cell_field34}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+		 r-ori-vert				{$Username_class}
+			"
 
+			data-field="Username"
 	
 	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
-	
+	 
+		{BEGIN Username_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field24" {$item_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username" data-default-width >
+{$Username_value}
+</span>
+{END Username_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field34}
 												</tr>

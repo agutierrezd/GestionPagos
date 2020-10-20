@@ -22,12 +22,12 @@ class ViewUserControl extends ViewControl
 		// For build we need to add RunnerAll.js
 		//$this->AddJSFile("include/runnerJS/controls/".$this->viewFormat.".js", 'include/runnerJS/viewControls/ViewControl.js');
 		
-					if($this->container->tName=="hoja_ruta_2020_pn1" && $this->field=="hr_id_qr" && $this->container->pageType=="print")
+					if($this->container->tName=="hoja_ruta_2020_pn2" && $this->field=="hr_id_qr" && $this->container->pageType=="print")
 		{
 			$this->settings["option1"] = "value";
 $this->settings["option2"] = 0;;
 		}	
-					if($this->container->tName=="hoja_ruta_2020_pn2" && $this->field=="hr_id_qr" && $this->container->pageType=="print")
+					if($this->container->tName=="hoja_ruta_2020_pn0" && $this->field=="hr_id_qr" && $this->container->pageType=="print")
 		{
 			$this->settings["option1"] = "value";
 $this->settings["option2"] = 0;;

@@ -709,6 +709,31 @@
 </div>
 
 {END usr_nombresfull_fieldblock}
+											
+{BEGIN usr_status_nomina_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_status_nomina}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="usr_status_nomina" 
+	
+	data-signal-error-for="usr_status_nomina{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="usr_status_nomina" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_usr_status_nomina}">
+		{$label q_buscador_usuarios_all usr_status_nomina }	</label>
+	<div class="r-search-option">
+		{$searchtype_usr_status_nomina}
+	</div>
+	<div class="r-search-field">
+		{$usr_status_nomina_editcontrol}	</div>
+	<div class="r-search-field">
+		{$usr_status_nomina_editcontrol1}
+	</div>
+	
+</div>
+
+{END usr_status_nomina_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

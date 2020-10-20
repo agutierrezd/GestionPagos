@@ -154,6 +154,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelshoja_ruta_2020["Spanish"]["periodo_id"] = "Periodo Id";
 	$fieldToolTipshoja_ruta_2020["Spanish"]["periodo_id"] = "";
 	$placeHoldershoja_ruta_2020["Spanish"]["periodo_id"] = "";
+	$fieldLabelshoja_ruta_2020["Spanish"]["sys_sup"] = "Sys Sup";
+	$fieldToolTipshoja_ruta_2020["Spanish"]["sys_sup"] = "";
+	$placeHoldershoja_ruta_2020["Spanish"]["sys_sup"] = "";
 	if (count($fieldToolTipshoja_ruta_2020["Spanish"]))
 		$tdatahoja_ruta_2020[".isUseToolTips"] = true;
 }
@@ -297,6 +300,7 @@ $tdatahoja_ruta_2020[".googleLikeFields"][] = "hr_estado_fecha";
 $tdatahoja_ruta_2020[".googleLikeFields"][] = "hr_estado_file";
 $tdatahoja_ruta_2020[".googleLikeFields"][] = "hr_estado_user";
 $tdatahoja_ruta_2020[".googleLikeFields"][] = "sys_user";
+$tdatahoja_ruta_2020[".googleLikeFields"][] = "sys_sup";
 $tdatahoja_ruta_2020[".googleLikeFields"][] = "sys_dep";
 $tdatahoja_ruta_2020[".googleLikeFields"][] = "sys_user_actual";
 $tdatahoja_ruta_2020[".googleLikeFields"][] = "sys_fecha_reg";
@@ -352,7 +356,7 @@ $tdatahoja_ruta_2020[".strOrderBy"] = $tstrOrderBy;
 
 $tdatahoja_ruta_2020[".orderindexes"] = array();
 
-$tdatahoja_ruta_2020[".sqlHead"] = "SELECT hr_id,  	hr_concepto_id,  	id_cont_fk,  	cont_num,  	hr_anio,  	periodo_id,  	ctrlpagos_id_fk,  	cxc_id_fk,  	obligacion,  	id_informe_fk,  	hr_nit_contra_ta,  	hr_asunto,  	hr_valor,  	hr_fechaingreso,  	hr_fecha_salida,  	hr_estado_firma,  	hr_estado_numero,  	hr_estado_fecha,  	hr_estado_file,  	hr_estado_user,  	sys_user,  	sys_dep,  	sys_user_actual,  	sys_fecha_reg,  	hr_file,  	not_status,  	not_time,  	not_user,  	not_date,  	not_mail,  	not_msg,  	`sysdate`,  	evento_type_id_fk,  	user_from,  	tercero_email_a,  	tercero_email_b,  	last_act_user,  	hr_aprob_estado,  	hr_aprob_fecha,  	hr_aprob_user,  	anio,  	mes";
+$tdatahoja_ruta_2020[".sqlHead"] = "SELECT hr_id,  	hr_concepto_id,  	id_cont_fk,  	cont_num,  	hr_anio,  	periodo_id,  	ctrlpagos_id_fk,  	cxc_id_fk,  	obligacion,  	id_informe_fk,  	hr_nit_contra_ta,  	hr_asunto,  	hr_valor,  	hr_fechaingreso,  	hr_fecha_salida,  	hr_estado_firma,  	hr_estado_numero,  	hr_estado_fecha,  	hr_estado_file,  	hr_estado_user,  	sys_user,  	sys_sup,  	sys_dep,  	sys_user_actual,  	sys_fecha_reg,  	hr_file,  	not_status,  	not_time,  	not_user,  	not_date,  	not_mail,  	not_msg,  	`sysdate`,  	evento_type_id_fk,  	user_from,  	tercero_email_a,  	tercero_email_b,  	last_act_user,  	hr_aprob_estado,  	hr_aprob_fecha,  	hr_aprob_user,  	anio,  	mes";
 $tdatahoja_ruta_2020[".sqlFrom"] = "FROM hoja_ruta_2020";
 $tdatahoja_ruta_2020[".sqlWhereExpr"] = "";
 $tdatahoja_ruta_2020[".sqlTail"] = "";
@@ -3245,10 +3249,145 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 
 	$tdatahoja_ruta_2020["sys_user"] = $fdata;
 		$tdatahoja_ruta_2020[".searchableFields"][] = "sys_user";
-//	sys_dep
+//	sys_sup
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 22;
+	$fdata["strName"] = "sys_sup";
+	$fdata["GoodName"] = "sys_sup";
+	$fdata["ownerTable"] = "hoja_ruta_2020";
+	$fdata["Label"] = GetFieldLabel("hoja_ruta_2020","sys_sup");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sys_sup";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sys_sup";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=30";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatahoja_ruta_2020["sys_sup"] = $fdata;
+		$tdatahoja_ruta_2020[".searchableFields"][] = "sys_sup";
+//	sys_dep
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 23;
 	$fdata["strName"] = "sys_dep";
 	$fdata["GoodName"] = "sys_dep";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -3383,7 +3522,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	sys_user_actual
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 23;
+	$fdata["Index"] = 24;
 	$fdata["strName"] = "sys_user_actual";
 	$fdata["GoodName"] = "sys_user_actual";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -3518,7 +3657,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	sys_fecha_reg
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 24;
+	$fdata["Index"] = 25;
 	$fdata["strName"] = "sys_fecha_reg";
 	$fdata["GoodName"] = "sys_fecha_reg";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -3655,7 +3794,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	hr_file
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 25;
+	$fdata["Index"] = 26;
 	$fdata["strName"] = "hr_file";
 	$fdata["GoodName"] = "hr_file";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -3790,7 +3929,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	not_status
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 26;
+	$fdata["Index"] = 27;
 	$fdata["strName"] = "not_status";
 	$fdata["GoodName"] = "not_status";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -3925,7 +4064,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	not_time
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 27;
+	$fdata["Index"] = 28;
 	$fdata["strName"] = "not_time";
 	$fdata["GoodName"] = "not_time";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4063,7 +4202,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	not_user
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 28;
+	$fdata["Index"] = 29;
 	$fdata["strName"] = "not_user";
 	$fdata["GoodName"] = "not_user";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4198,7 +4337,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	not_date
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 29;
+	$fdata["Index"] = 30;
 	$fdata["strName"] = "not_date";
 	$fdata["GoodName"] = "not_date";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4333,7 +4472,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	not_mail
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 30;
+	$fdata["Index"] = 31;
 	$fdata["strName"] = "not_mail";
 	$fdata["GoodName"] = "not_mail";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4468,7 +4607,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	not_msg
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 31;
+	$fdata["Index"] = 32;
 	$fdata["strName"] = "not_msg";
 	$fdata["GoodName"] = "not_msg";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4603,7 +4742,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	sysdate
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 32;
+	$fdata["Index"] = 33;
 	$fdata["strName"] = "sysdate";
 	$fdata["GoodName"] = "sysdate";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4738,7 +4877,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	evento_type_id_fk
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 33;
+	$fdata["Index"] = 34;
 	$fdata["strName"] = "evento_type_id_fk";
 	$fdata["GoodName"] = "evento_type_id_fk";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -4898,7 +5037,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	user_from
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 34;
+	$fdata["Index"] = 35;
 	$fdata["strName"] = "user_from";
 	$fdata["GoodName"] = "user_from";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5033,7 +5172,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	tercero_email_a
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 35;
+	$fdata["Index"] = 36;
 	$fdata["strName"] = "tercero_email_a";
 	$fdata["GoodName"] = "tercero_email_a";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5168,7 +5307,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	tercero_email_b
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 36;
+	$fdata["Index"] = 37;
 	$fdata["strName"] = "tercero_email_b";
 	$fdata["GoodName"] = "tercero_email_b";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5303,7 +5442,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	last_act_user
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 37;
+	$fdata["Index"] = 38;
 	$fdata["strName"] = "last_act_user";
 	$fdata["GoodName"] = "last_act_user";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5438,7 +5577,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	hr_aprob_estado
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 38;
+	$fdata["Index"] = 39;
 	$fdata["strName"] = "hr_aprob_estado";
 	$fdata["GoodName"] = "hr_aprob_estado";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5573,7 +5712,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	hr_aprob_fecha
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 39;
+	$fdata["Index"] = 40;
 	$fdata["strName"] = "hr_aprob_fecha";
 	$fdata["GoodName"] = "hr_aprob_fecha";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5708,7 +5847,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	hr_aprob_user
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 40;
+	$fdata["Index"] = 41;
 	$fdata["strName"] = "hr_aprob_user";
 	$fdata["GoodName"] = "hr_aprob_user";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5843,7 +5982,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	anio
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 41;
+	$fdata["Index"] = 42;
 	$fdata["strName"] = "anio";
 	$fdata["GoodName"] = "anio";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -5978,7 +6117,7 @@ $tdatahoja_ruta_2020[".hideMobileList"] = array();
 //	mes
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 42;
+	$fdata["Index"] = 43;
 	$fdata["strName"] = "mes";
 	$fdata["GoodName"] = "mes";
 	$fdata["ownerTable"] = "hoja_ruta_2020";
@@ -6145,7 +6284,7 @@ function createSqlQuery_hoja_ruta_2020()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "hr_id,  	hr_concepto_id,  	id_cont_fk,  	cont_num,  	hr_anio,  	periodo_id,  	ctrlpagos_id_fk,  	cxc_id_fk,  	obligacion,  	id_informe_fk,  	hr_nit_contra_ta,  	hr_asunto,  	hr_valor,  	hr_fechaingreso,  	hr_fecha_salida,  	hr_estado_firma,  	hr_estado_numero,  	hr_estado_fecha,  	hr_estado_file,  	hr_estado_user,  	sys_user,  	sys_dep,  	sys_user_actual,  	sys_fecha_reg,  	hr_file,  	not_status,  	not_time,  	not_user,  	not_date,  	not_mail,  	not_msg,  	`sysdate`,  	evento_type_id_fk,  	user_from,  	tercero_email_a,  	tercero_email_b,  	last_act_user,  	hr_aprob_estado,  	hr_aprob_fecha,  	hr_aprob_user,  	anio,  	mes";
+$proto0["m_strFieldList"] = "hr_id,  	hr_concepto_id,  	id_cont_fk,  	cont_num,  	hr_anio,  	periodo_id,  	ctrlpagos_id_fk,  	cxc_id_fk,  	obligacion,  	id_informe_fk,  	hr_nit_contra_ta,  	hr_asunto,  	hr_valor,  	hr_fechaingreso,  	hr_fecha_salida,  	hr_estado_firma,  	hr_estado_numero,  	hr_estado_fecha,  	hr_estado_file,  	hr_estado_user,  	sys_user,  	sys_sup,  	sys_dep,  	sys_user_actual,  	sys_fecha_reg,  	hr_file,  	not_status,  	not_time,  	not_user,  	not_date,  	not_mail,  	not_msg,  	`sysdate`,  	evento_type_id_fk,  	user_from,  	tercero_email_a,  	tercero_email_b,  	last_act_user,  	hr_aprob_estado,  	hr_aprob_fecha,  	hr_aprob_user,  	anio,  	mes";
 $proto0["m_strFrom"] = "FROM hoja_ruta_2020";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -6481,12 +6620,12 @@ $obj = new SQLFieldListItem($proto46);
 $proto0["m_fieldlist"][]=$obj;
 						$proto48=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_dep",
+	"m_strName" => "sys_sup",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto48["m_sql"] = "sys_dep";
+$proto48["m_sql"] = "sys_sup";
 $proto48["m_srcTableName"] = "hoja_ruta_2020";
 $proto48["m_expr"]=$obj;
 $proto48["m_alias"] = "";
@@ -6495,12 +6634,12 @@ $obj = new SQLFieldListItem($proto48);
 $proto0["m_fieldlist"][]=$obj;
 						$proto50=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_user_actual",
+	"m_strName" => "sys_dep",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto50["m_sql"] = "sys_user_actual";
+$proto50["m_sql"] = "sys_dep";
 $proto50["m_srcTableName"] = "hoja_ruta_2020";
 $proto50["m_expr"]=$obj;
 $proto50["m_alias"] = "";
@@ -6509,12 +6648,12 @@ $obj = new SQLFieldListItem($proto50);
 $proto0["m_fieldlist"][]=$obj;
 						$proto52=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_fecha_reg",
+	"m_strName" => "sys_user_actual",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto52["m_sql"] = "sys_fecha_reg";
+$proto52["m_sql"] = "sys_user_actual";
 $proto52["m_srcTableName"] = "hoja_ruta_2020";
 $proto52["m_expr"]=$obj;
 $proto52["m_alias"] = "";
@@ -6523,12 +6662,12 @@ $obj = new SQLFieldListItem($proto52);
 $proto0["m_fieldlist"][]=$obj;
 						$proto54=array();
 			$obj = new SQLField(array(
-	"m_strName" => "hr_file",
+	"m_strName" => "sys_fecha_reg",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto54["m_sql"] = "hr_file";
+$proto54["m_sql"] = "sys_fecha_reg";
 $proto54["m_srcTableName"] = "hoja_ruta_2020";
 $proto54["m_expr"]=$obj;
 $proto54["m_alias"] = "";
@@ -6537,12 +6676,12 @@ $obj = new SQLFieldListItem($proto54);
 $proto0["m_fieldlist"][]=$obj;
 						$proto56=array();
 			$obj = new SQLField(array(
-	"m_strName" => "not_status",
+	"m_strName" => "hr_file",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto56["m_sql"] = "not_status";
+$proto56["m_sql"] = "hr_file";
 $proto56["m_srcTableName"] = "hoja_ruta_2020";
 $proto56["m_expr"]=$obj;
 $proto56["m_alias"] = "";
@@ -6551,12 +6690,12 @@ $obj = new SQLFieldListItem($proto56);
 $proto0["m_fieldlist"][]=$obj;
 						$proto58=array();
 			$obj = new SQLField(array(
-	"m_strName" => "not_time",
+	"m_strName" => "not_status",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto58["m_sql"] = "not_time";
+$proto58["m_sql"] = "not_status";
 $proto58["m_srcTableName"] = "hoja_ruta_2020";
 $proto58["m_expr"]=$obj;
 $proto58["m_alias"] = "";
@@ -6565,12 +6704,12 @@ $obj = new SQLFieldListItem($proto58);
 $proto0["m_fieldlist"][]=$obj;
 						$proto60=array();
 			$obj = new SQLField(array(
-	"m_strName" => "not_user",
+	"m_strName" => "not_time",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto60["m_sql"] = "not_user";
+$proto60["m_sql"] = "not_time";
 $proto60["m_srcTableName"] = "hoja_ruta_2020";
 $proto60["m_expr"]=$obj;
 $proto60["m_alias"] = "";
@@ -6579,12 +6718,12 @@ $obj = new SQLFieldListItem($proto60);
 $proto0["m_fieldlist"][]=$obj;
 						$proto62=array();
 			$obj = new SQLField(array(
-	"m_strName" => "not_date",
+	"m_strName" => "not_user",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto62["m_sql"] = "not_date";
+$proto62["m_sql"] = "not_user";
 $proto62["m_srcTableName"] = "hoja_ruta_2020";
 $proto62["m_expr"]=$obj;
 $proto62["m_alias"] = "";
@@ -6593,12 +6732,12 @@ $obj = new SQLFieldListItem($proto62);
 $proto0["m_fieldlist"][]=$obj;
 						$proto64=array();
 			$obj = new SQLField(array(
-	"m_strName" => "not_mail",
+	"m_strName" => "not_date",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto64["m_sql"] = "not_mail";
+$proto64["m_sql"] = "not_date";
 $proto64["m_srcTableName"] = "hoja_ruta_2020";
 $proto64["m_expr"]=$obj;
 $proto64["m_alias"] = "";
@@ -6607,12 +6746,12 @@ $obj = new SQLFieldListItem($proto64);
 $proto0["m_fieldlist"][]=$obj;
 						$proto66=array();
 			$obj = new SQLField(array(
-	"m_strName" => "not_msg",
+	"m_strName" => "not_mail",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto66["m_sql"] = "not_msg";
+$proto66["m_sql"] = "not_mail";
 $proto66["m_srcTableName"] = "hoja_ruta_2020";
 $proto66["m_expr"]=$obj;
 $proto66["m_alias"] = "";
@@ -6621,12 +6760,12 @@ $obj = new SQLFieldListItem($proto66);
 $proto0["m_fieldlist"][]=$obj;
 						$proto68=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sysdate",
+	"m_strName" => "not_msg",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto68["m_sql"] = "`sysdate`";
+$proto68["m_sql"] = "not_msg";
 $proto68["m_srcTableName"] = "hoja_ruta_2020";
 $proto68["m_expr"]=$obj;
 $proto68["m_alias"] = "";
@@ -6635,12 +6774,12 @@ $obj = new SQLFieldListItem($proto68);
 $proto0["m_fieldlist"][]=$obj;
 						$proto70=array();
 			$obj = new SQLField(array(
-	"m_strName" => "evento_type_id_fk",
+	"m_strName" => "sysdate",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto70["m_sql"] = "evento_type_id_fk";
+$proto70["m_sql"] = "`sysdate`";
 $proto70["m_srcTableName"] = "hoja_ruta_2020";
 $proto70["m_expr"]=$obj;
 $proto70["m_alias"] = "";
@@ -6649,12 +6788,12 @@ $obj = new SQLFieldListItem($proto70);
 $proto0["m_fieldlist"][]=$obj;
 						$proto72=array();
 			$obj = new SQLField(array(
-	"m_strName" => "user_from",
+	"m_strName" => "evento_type_id_fk",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto72["m_sql"] = "user_from";
+$proto72["m_sql"] = "evento_type_id_fk";
 $proto72["m_srcTableName"] = "hoja_ruta_2020";
 $proto72["m_expr"]=$obj;
 $proto72["m_alias"] = "";
@@ -6663,12 +6802,12 @@ $obj = new SQLFieldListItem($proto72);
 $proto0["m_fieldlist"][]=$obj;
 						$proto74=array();
 			$obj = new SQLField(array(
-	"m_strName" => "tercero_email_a",
+	"m_strName" => "user_from",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto74["m_sql"] = "tercero_email_a";
+$proto74["m_sql"] = "user_from";
 $proto74["m_srcTableName"] = "hoja_ruta_2020";
 $proto74["m_expr"]=$obj;
 $proto74["m_alias"] = "";
@@ -6677,12 +6816,12 @@ $obj = new SQLFieldListItem($proto74);
 $proto0["m_fieldlist"][]=$obj;
 						$proto76=array();
 			$obj = new SQLField(array(
-	"m_strName" => "tercero_email_b",
+	"m_strName" => "tercero_email_a",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto76["m_sql"] = "tercero_email_b";
+$proto76["m_sql"] = "tercero_email_a";
 $proto76["m_srcTableName"] = "hoja_ruta_2020";
 $proto76["m_expr"]=$obj;
 $proto76["m_alias"] = "";
@@ -6691,12 +6830,12 @@ $obj = new SQLFieldListItem($proto76);
 $proto0["m_fieldlist"][]=$obj;
 						$proto78=array();
 			$obj = new SQLField(array(
-	"m_strName" => "last_act_user",
+	"m_strName" => "tercero_email_b",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto78["m_sql"] = "last_act_user";
+$proto78["m_sql"] = "tercero_email_b";
 $proto78["m_srcTableName"] = "hoja_ruta_2020";
 $proto78["m_expr"]=$obj;
 $proto78["m_alias"] = "";
@@ -6705,12 +6844,12 @@ $obj = new SQLFieldListItem($proto78);
 $proto0["m_fieldlist"][]=$obj;
 						$proto80=array();
 			$obj = new SQLField(array(
-	"m_strName" => "hr_aprob_estado",
+	"m_strName" => "last_act_user",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto80["m_sql"] = "hr_aprob_estado";
+$proto80["m_sql"] = "last_act_user";
 $proto80["m_srcTableName"] = "hoja_ruta_2020";
 $proto80["m_expr"]=$obj;
 $proto80["m_alias"] = "";
@@ -6719,12 +6858,12 @@ $obj = new SQLFieldListItem($proto80);
 $proto0["m_fieldlist"][]=$obj;
 						$proto82=array();
 			$obj = new SQLField(array(
-	"m_strName" => "hr_aprob_fecha",
+	"m_strName" => "hr_aprob_estado",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto82["m_sql"] = "hr_aprob_fecha";
+$proto82["m_sql"] = "hr_aprob_estado";
 $proto82["m_srcTableName"] = "hoja_ruta_2020";
 $proto82["m_expr"]=$obj;
 $proto82["m_alias"] = "";
@@ -6733,12 +6872,12 @@ $obj = new SQLFieldListItem($proto82);
 $proto0["m_fieldlist"][]=$obj;
 						$proto84=array();
 			$obj = new SQLField(array(
-	"m_strName" => "hr_aprob_user",
+	"m_strName" => "hr_aprob_fecha",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto84["m_sql"] = "hr_aprob_user";
+$proto84["m_sql"] = "hr_aprob_fecha";
 $proto84["m_srcTableName"] = "hoja_ruta_2020";
 $proto84["m_expr"]=$obj;
 $proto84["m_alias"] = "";
@@ -6747,12 +6886,12 @@ $obj = new SQLFieldListItem($proto84);
 $proto0["m_fieldlist"][]=$obj;
 						$proto86=array();
 			$obj = new SQLField(array(
-	"m_strName" => "anio",
+	"m_strName" => "hr_aprob_user",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto86["m_sql"] = "anio";
+$proto86["m_sql"] = "hr_aprob_user";
 $proto86["m_srcTableName"] = "hoja_ruta_2020";
 $proto86["m_expr"]=$obj;
 $proto86["m_alias"] = "";
@@ -6761,90 +6900,105 @@ $obj = new SQLFieldListItem($proto86);
 $proto0["m_fieldlist"][]=$obj;
 						$proto88=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mes",
+	"m_strName" => "anio",
 	"m_strTable" => "hoja_ruta_2020",
 	"m_srcTableName" => "hoja_ruta_2020"
 ));
 
-$proto88["m_sql"] = "mes";
+$proto88["m_sql"] = "anio";
 $proto88["m_srcTableName"] = "hoja_ruta_2020";
 $proto88["m_expr"]=$obj;
 $proto88["m_alias"] = "";
 $obj = new SQLFieldListItem($proto88);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto90=array();
-$proto90["m_link"] = "SQLL_MAIN";
-			$proto91=array();
-$proto91["m_strName"] = "hoja_ruta_2020";
-$proto91["m_srcTableName"] = "hoja_ruta_2020";
-$proto91["m_columns"] = array();
-$proto91["m_columns"][] = "hr_id";
-$proto91["m_columns"][] = "hr_concepto_id";
-$proto91["m_columns"][] = "id_cont_fk";
-$proto91["m_columns"][] = "cont_num";
-$proto91["m_columns"][] = "hr_anio";
-$proto91["m_columns"][] = "periodo_id";
-$proto91["m_columns"][] = "ctrlpagos_id_fk";
-$proto91["m_columns"][] = "cxc_id_fk";
-$proto91["m_columns"][] = "obligacion";
-$proto91["m_columns"][] = "id_informe_fk";
-$proto91["m_columns"][] = "hr_nit_contra_ta";
-$proto91["m_columns"][] = "hr_asunto";
-$proto91["m_columns"][] = "hr_valor";
-$proto91["m_columns"][] = "hr_fechaingreso";
-$proto91["m_columns"][] = "hr_fecha_salida";
-$proto91["m_columns"][] = "hr_estado_firma";
-$proto91["m_columns"][] = "hr_estado_numero";
-$proto91["m_columns"][] = "hr_estado_fecha";
-$proto91["m_columns"][] = "hr_estado_file";
-$proto91["m_columns"][] = "hr_estado_user";
-$proto91["m_columns"][] = "sys_user";
-$proto91["m_columns"][] = "sys_dep";
-$proto91["m_columns"][] = "sys_user_actual";
-$proto91["m_columns"][] = "sys_fecha_reg";
-$proto91["m_columns"][] = "hr_file";
-$proto91["m_columns"][] = "not_status";
-$proto91["m_columns"][] = "not_time";
-$proto91["m_columns"][] = "not_user";
-$proto91["m_columns"][] = "not_date";
-$proto91["m_columns"][] = "not_mail";
-$proto91["m_columns"][] = "not_msg";
-$proto91["m_columns"][] = "sysdate";
-$proto91["m_columns"][] = "evento_type_id_fk";
-$proto91["m_columns"][] = "user_from";
-$proto91["m_columns"][] = "tercero_email_a";
-$proto91["m_columns"][] = "tercero_email_b";
-$proto91["m_columns"][] = "last_act_user";
-$proto91["m_columns"][] = "hr_aprob_estado";
-$proto91["m_columns"][] = "hr_aprob_fecha";
-$proto91["m_columns"][] = "hr_aprob_user";
-$proto91["m_columns"][] = "anio";
-$proto91["m_columns"][] = "mes";
-$obj = new SQLTable($proto91);
+						$proto90=array();
+			$obj = new SQLField(array(
+	"m_strName" => "mes",
+	"m_strTable" => "hoja_ruta_2020",
+	"m_srcTableName" => "hoja_ruta_2020"
+));
 
-$proto90["m_table"] = $obj;
-$proto90["m_sql"] = "hoja_ruta_2020";
-$proto90["m_alias"] = "";
+$proto90["m_sql"] = "mes";
 $proto90["m_srcTableName"] = "hoja_ruta_2020";
-$proto92=array();
-$proto92["m_sql"] = "";
-$proto92["m_uniontype"] = "SQLL_UNKNOWN";
+$proto90["m_expr"]=$obj;
+$proto90["m_alias"] = "";
+$obj = new SQLFieldListItem($proto90);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto92=array();
+$proto92["m_link"] = "SQLL_MAIN";
+			$proto93=array();
+$proto93["m_strName"] = "hoja_ruta_2020";
+$proto93["m_srcTableName"] = "hoja_ruta_2020";
+$proto93["m_columns"] = array();
+$proto93["m_columns"][] = "hr_id";
+$proto93["m_columns"][] = "hr_concepto_id";
+$proto93["m_columns"][] = "id_cont_fk";
+$proto93["m_columns"][] = "cont_num";
+$proto93["m_columns"][] = "hr_anio";
+$proto93["m_columns"][] = "periodo_id";
+$proto93["m_columns"][] = "ctrlpagos_id_fk";
+$proto93["m_columns"][] = "cxc_id_fk";
+$proto93["m_columns"][] = "obligacion";
+$proto93["m_columns"][] = "id_informe_fk";
+$proto93["m_columns"][] = "hr_nit_contra_ta";
+$proto93["m_columns"][] = "hr_asunto";
+$proto93["m_columns"][] = "hr_valor";
+$proto93["m_columns"][] = "hr_fechaingreso";
+$proto93["m_columns"][] = "hr_fecha_salida";
+$proto93["m_columns"][] = "hr_estado_firma";
+$proto93["m_columns"][] = "hr_estado_numero";
+$proto93["m_columns"][] = "hr_estado_fecha";
+$proto93["m_columns"][] = "hr_estado_file";
+$proto93["m_columns"][] = "hr_estado_user";
+$proto93["m_columns"][] = "sys_user";
+$proto93["m_columns"][] = "sys_sup";
+$proto93["m_columns"][] = "sys_dep";
+$proto93["m_columns"][] = "sys_user_actual";
+$proto93["m_columns"][] = "sys_fecha_reg";
+$proto93["m_columns"][] = "hr_file";
+$proto93["m_columns"][] = "not_status";
+$proto93["m_columns"][] = "not_time";
+$proto93["m_columns"][] = "not_user";
+$proto93["m_columns"][] = "not_date";
+$proto93["m_columns"][] = "not_mail";
+$proto93["m_columns"][] = "not_msg";
+$proto93["m_columns"][] = "sysdate";
+$proto93["m_columns"][] = "evento_type_id_fk";
+$proto93["m_columns"][] = "user_from";
+$proto93["m_columns"][] = "tercero_email_a";
+$proto93["m_columns"][] = "tercero_email_b";
+$proto93["m_columns"][] = "last_act_user";
+$proto93["m_columns"][] = "hr_aprob_estado";
+$proto93["m_columns"][] = "hr_aprob_fecha";
+$proto93["m_columns"][] = "hr_aprob_user";
+$proto93["m_columns"][] = "anio";
+$proto93["m_columns"][] = "mes";
+$obj = new SQLTable($proto93);
+
+$proto92["m_table"] = $obj;
+$proto92["m_sql"] = "hoja_ruta_2020";
+$proto92["m_alias"] = "";
+$proto92["m_srcTableName"] = "hoja_ruta_2020";
+$proto94=array();
+$proto94["m_sql"] = "";
+$proto94["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto92["m_column"]=$obj;
-$proto92["m_contained"] = array();
-$proto92["m_strCase"] = "";
-$proto92["m_havingmode"] = false;
-$proto92["m_inBrackets"] = false;
-$proto92["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto92);
+$proto94["m_column"]=$obj;
+$proto94["m_contained"] = array();
+$proto94["m_strCase"] = "";
+$proto94["m_havingmode"] = false;
+$proto94["m_inBrackets"] = false;
+$proto94["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto94);
 
-$proto90["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto90);
+$proto92["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto92);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -6860,7 +7014,7 @@ $queryData_hoja_ruta_2020 = createSqlQuery_hoja_ruta_2020();
 	
 								;
 
-																																										
+																																											
 
 $tdatahoja_ruta_2020[".sqlquery"] = $queryData_hoja_ruta_2020;
 

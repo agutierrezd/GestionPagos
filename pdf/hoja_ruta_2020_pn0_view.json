@@ -1,0 +1,817 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel hoja_ruta_2020_pn0 view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: '+ Información del contrato', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section2_0}
+								'*', 
+								{END col_section2_0}
+													],
+						body: [
+								
+					{BEGIN row_section2_0}
+				[
+												{BEGIN cellblock_section2_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_q_info_cont}
+			{$displayDetailTable_q_info_cont }
+		{END details_q_info_cont},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c1}
+											],
+				{END row_section2_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'Gestionar solicitud de pago', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section_0}
+								'*', 
+								{END col_section_0}
+							 
+								{BEGIN col_section_1}
+								'*', 
+								{END col_section_1}
+													],
+						body: [
+								
+					{BEGIN row_section_0}
+				[
+												{BEGIN cellblock_section_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 sys_dep }","bold":true},{"text":{$sys_dep_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c2}
+																			{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 evento_type_id_fk }","bold":true},{"text":{$evento_type_id_fk_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c3}
+											],
+				{END row_section_0}
+								{BEGIN row_section_1}
+				[
+												{BEGIN cellblock_section_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 sys_user }","bold":true},{"text":{$sys_user_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c9}
+																			{BEGIN cellblock_section_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 not_mail }","bold":true},{"text":{$not_mail_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c10}
+											],
+				{END row_section_1}
+								{BEGIN row_section_2}
+				[
+												{BEGIN cellblock_section_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 hr_asunto }","bold":true},{"text":{$hr_asunto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c4}
+																			{BEGIN cellblock_section_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 hr_valor }","bold":true},{"text":{$hr_valor_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c5}
+											],
+				{END row_section_2}
+								{BEGIN row_section_3}
+				[
+												{BEGIN cellblock_section_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section_c8}
+			colSpan: {$colspan_section_c8},
+			{END colspan_section_c8}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 not_msg }","bold":true},{"text":{$not_msg_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c8}
+																		{ 
+				cellId: 'c8',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_section_3}
+								{BEGIN row_section_4}
+				[
+												{BEGIN cellblock_section_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 tercero_email_a }","bold":true},{"text":{$tercero_email_a_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c1}
+																			{BEGIN cellblock_section_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 tercero_email_b }","bold":true},{"text":{$tercero_email_b_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c}
+											],
+				{END row_section_4}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: '', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section1_0}
+								'*', 
+								{END col_section1_0}
+							 
+								{BEGIN col_section1_1}
+								'*', 
+								{END col_section1_1}
+													],
+						body: [
+								
+					{BEGIN row_section1_0}
+				[
+												{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 hr_nit_contra_ta }","bold":true},{"text":{$hr_nit_contra_ta_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c8}
+																			{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 id_cont_fk }","bold":true},{"text":{$id_cont_fk_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c9}
+											],
+				{END row_section1_0}
+								{BEGIN row_section1_1}
+				[
+												{BEGIN cellblock_section1_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 nombrecont }","bold":true},{"text":{$nombrecont_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c1}
+																			{BEGIN cellblock_section1_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 not_user }","bold":true},{"text":{$not_user_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c4}
+											],
+				{END row_section1_1}
+								{BEGIN row_section1_2}
+				[
+												{BEGIN cellblock_section1_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 not_date }","bold":true},{"text":{$not_date_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c3}
+																			{BEGIN cellblock_section1_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 hr_anio }","bold":true},{"text":{$hr_anio_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c5}
+											],
+				{END row_section1_2}
+								{BEGIN row_section1_3}
+				[
+												{BEGIN cellblock_section1_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn0 last_act_user }","bold":true},{"text":{$last_act_user_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c2}
+																			{BEGIN cellblock_section1_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c6}
+											],
+				{END row_section1_3}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c18}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

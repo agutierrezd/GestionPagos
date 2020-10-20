@@ -3109,7 +3109,8 @@ $tdatahoja_ruta_2020_pn[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 0;
 	$edata["DisplayField"] = "usr_nombresfull";
 
-	
+				$edata["LookupWhereCode"] = true;
+
 
 	
 	$edata["LookupOrderBy"] = "";
@@ -6154,6 +6155,35 @@ $detailsTablesData["hoja_ruta_2020_pn"] = array();
 				$detailsTablesData["hoja_ruta_2020_pn"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["hoja_ruta_2020_pn"][$dIndex]["detailKeys"][]="hr_id_fk";
+//	q_info_cont
+	
+	
+
+		$dIndex = 2;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="q_info_cont";
+		$detailsParam["dOriginalTable"] = "q_bandejaentrada_supervisores";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "q_info_cont";
+	$detailsParam["dCaptionTable"] = GetTableCaption("q_info_cont");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["hoja_ruta_2020_pn"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["hoja_ruta_2020_pn"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["hoja_ruta_2020_pn"][$dIndex]["masterKeys"][]="id_cont_fk";
+
+				$detailsTablesData["hoja_ruta_2020_pn"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["hoja_ruta_2020_pn"][$dIndex]["detailKeys"][]="id_cont";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["hoja_ruta_2020_pn"] = array();
@@ -6822,6 +6852,7 @@ $proto89["m_columns"][] = "hr_estado_fecha";
 $proto89["m_columns"][] = "hr_estado_file";
 $proto89["m_columns"][] = "hr_estado_user";
 $proto89["m_columns"][] = "sys_user";
+$proto89["m_columns"][] = "sys_sup";
 $proto89["m_columns"][] = "sys_dep";
 $proto89["m_columns"][] = "sys_user_actual";
 $proto89["m_columns"][] = "sys_fecha_reg";

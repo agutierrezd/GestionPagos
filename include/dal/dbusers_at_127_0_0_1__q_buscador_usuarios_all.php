@@ -25,6 +25,7 @@ $dalTableq_buscador_usuarios_all["grado"] = array("type"=>200,"varname"=>"grado"
 $dalTableq_buscador_usuarios_all["nombre_dependencia"] = array("type"=>200,"varname"=>"nombre_dependencia", "name" => "nombre_dependencia");
 $dalTableq_buscador_usuarios_all["Departamento_superior"] = array("type"=>200,"varname"=>"Departamento_superior", "name" => "Departamento_superior");
 $dalTableq_buscador_usuarios_all["usr_nombresfull"] = array("type"=>200,"varname"=>"usr_nombresfull", "name" => "usr_nombresfull");
+$dalTableq_buscador_usuarios_all["usr_status_nomina"] = array("type"=>3,"varname"=>"usr_status_nomina", "name" => "usr_status_nomina");
 
 $dal_info["dbusers_at_127_0_0_1__q_buscador_usuarios_all"] = &$dalTableq_buscador_usuarios_all;
 ?>

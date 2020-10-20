@@ -696,6 +696,9 @@ pdfDocument = {
 				
 			{"text":"","hidden":"{$item_hide_grid_details_link1}"},
 				
+				
+			{"text":"","hidden":"{$item_hide_grid_details_link2}"},
+				
 		  ],
   "border": [ true, true, true, true ],
           "alignment": 'left',
@@ -1047,6 +1050,11 @@ pdfDocument = {
 			 {BEGIN details_hoja_ruta_2020_tracking}
 			{$displayDetailTable_hoja_ruta_2020_tracking }
 		{END details_hoja_ruta_2020_tracking},
+				
+				
+			 {BEGIN details_q_info_cont}
+			{$displayDetailTable_q_info_cont }
+		{END details_q_info_cont},
 				
 		  ],
   "border": [ true, true, true, true ],

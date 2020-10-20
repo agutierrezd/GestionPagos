@@ -1693,6 +1693,54 @@ $masterTablesData["hoja_ruta_op"] = array();
 				$masterTablesData["hoja_ruta_op"][1]["detailKeys"] = array();
 	$masterTablesData["hoja_ruta_op"][1]["detailKeys"][]="hr_id_fk";
 		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pn0";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pn0";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_op"][2] = $masterParams;
+				$masterTablesData["hoja_ruta_op"][2]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_op"][2]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_op"][2]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_op"][2]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pnc1";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pnc1";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_op"][3] = $masterParams;
+				$masterTablesData["hoja_ruta_op"][3]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_op"][3]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_op"][3]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_op"][3]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pn3";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pn3";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_op"][4] = $masterParams;
+				$masterTablesData["hoja_ruta_op"][4]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_op"][4]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_op"][4]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_op"][4]["detailKeys"][]="hr_id_fk";
+		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 

@@ -1,7 +1,10 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
 'master' => array( 'hoja_ruta_2020_pn1' => array( 'preview' => true ),
-'hoja_ruta_2020_pn2' => array( 'preview' => false ) ),
+'hoja_ruta_2020_pn2' => array( 'preview' => false ),
+'hoja_ruta_2020_pn0' => array( 'preview' => false ),
+'hoja_ruta_2020_pnc1' => array( 'preview' => false ),
+'hoja_ruta_2020_pn3' => array( 'preview' => false ) ),
 'totals' => array( 'ctrlpagos_id' => array( 'totalsType' => '' ),
 'hr_id_fk' => array( 'totalsType' => '' ),
 'id_cont_fk' => array( 'totalsType' => '' ),

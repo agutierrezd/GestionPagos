@@ -962,6 +962,13 @@
 					Histórico de transacción				</label>
 			</div>
 			{END print_details_hoja_ruta_2020_tracking}
+														{BEGIN print_details_q_info_cont}
+			<div>
+				<label for="printDetailsq_info_cont{$id}">
+					<input type="checkbox" value="q_info_cont" id="printDetailsq_info_cont{$id}" checked>
+					::				</label>
+			</div>
+			{END print_details_q_info_cont}
 						</div>
 </div>
 {END print_details}
@@ -1558,6 +1565,25 @@
 	{END hoja_ruta_2020_tracking_dtable_link}
 
 
+	 
+		
+		
+	{BEGIN q_info_cont_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$q_info_cont_link_attrs} data-short-details="q_info_cont"
+		class="{$q_info_cont_dlink_class}" 
+		title="{$caption q_info_cont }"	>
+								
+									{BEGIN q_info_cont_childcount}
+				<span class="details-badge badge q_info_cont_badge" {$q_info_cont_childnumber_attr}>
+					{$q_info_cont_childnumber}				
+				</span>
+				{END q_info_cont_childcount}
+						</a>
+	</span>
+	{END q_info_cont_dtable_link}
+
+
 	
 	</td>
 	{END cellblock_grid_cell_details}
@@ -1856,17 +1882,20 @@
 	>
 
 	 
-				<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="hoja_ruta_2020_files,hoja_ruta_2020_tracking"
-			data-details-hoja_ruta_2020_files			data-details-hoja_ruta_2020_tracking	>
+					<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="hoja_ruta_2020_files,hoja_ruta_2020_tracking,q_info_cont"
+			data-details-hoja_ruta_2020_files			data-details-hoja_ruta_2020_tracking			data-details-q_info_cont	>
 		<span data-details-inside data-short-table="hoja_ruta_2020_files">
 			</span>
 		<span data-details-inside data-short-table="hoja_ruta_2020_tracking">
+			</span>
+		<span data-details-inside data-short-table="q_info_cont">
 			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
+			 
 			
 	</td>
 	{END cellblock_grid_cell_dpreview}

@@ -1,4 +1,11 @@
 <?php
+require_once("include/dbcommon.php");
+if(postvalue("clear")){
+	$_SESSION["file_".str_replace("sigPad_","",postvalue("clear"))] = "";
+	die();
+}
+
+
 /**
  *  Signature to Image: A supplemental script for Signature Pad that
  *  generates an image of the signature’s JSON output server-side using PHP.

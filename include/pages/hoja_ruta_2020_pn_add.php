@@ -2,6 +2,8 @@
 			$optionsArray = array( 'details' => array( 'hoja_ruta_2020_files' => array( 'displayPreview' => 1,
 'previewPageId' => 'list' ),
 'hoja_ruta_2020_tracking' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'q_info_cont' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'hr_concepto_id',

@@ -261,6 +261,16 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("hoja_ruta_2020_pn2" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
+	if ("hoja_ruta_2020_pnc" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("q_bandejaentrada_supervisores_c" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("hoja_ruta_2020_pn0" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("hoja_ruta_2020_pnc1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("hoja_ruta_2020_pn3" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
 	return false;
 }
 
@@ -572,6 +582,51 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="hoja_ruta_2020_pn2";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("hoja_ruta_2020_pnc");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="hoja_ruta_2020_pnc";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_bandejaentrada_supervisores_c");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_bandejaentrada_supervisores_c";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("hoja_ruta_2020_pn0");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="hoja_ruta_2020_pn0";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("hoja_ruta_2020_pnc1");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="hoja_ruta_2020_pnc1";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("hoja_ruta_2020_pn3");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="hoja_ruta_2020_pn3";
+	}
 	return $arr;
 }
 
@@ -610,6 +665,11 @@ function GetTablesListWithoutSecurity()
 	$arr[]="ep_registros";
 	$arr[]="ep_op_temp";
 	$arr[]="hoja_ruta_2020_pn2";
+	$arr[]="hoja_ruta_2020_pnc";
+	$arr[]="q_bandejaentrada_supervisores_c";
+	$arr[]="hoja_ruta_2020_pn0";
+	$arr[]="hoja_ruta_2020_pnc1";
+	$arr[]="hoja_ruta_2020_pn3";
 	return $arr;
 }
 
@@ -1374,175 +1434,171 @@ function GetUserPermissionsStatic( $table )
 	if( $table=="funcionario" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="global_users" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="dependencias_001" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_rights" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_members" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="admin_users" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_2020_pn" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_bandejaentrada_supervisores" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_2020_files" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_2020_tracking" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="dependencia" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="cargo" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_event_type" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="informe_intersup_anexos_tipo" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="nomina_cont_meses" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contrato_estados" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_2020_pn1" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_info_cont" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="q_buscador_usuarios_all" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_ob" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_2020" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_op" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contractor_master" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="ep_obligaciones" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="ep_op" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="ep_obligaciones_temp" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="ep_registros" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="ep_op_temp" )
 	{
 //	default permissions
-		// grant all by default
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="hoja_ruta_2020_pn2" )
 	{
 //	default permissions
-		// grant all by default
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="hoja_ruta_2020_pnc" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_bandejaentrada_supervisores_c" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="hoja_ruta_2020_pn0" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="hoja_ruta_2020_pnc1" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="hoja_ruta_2020_pn3" )
+	{
+//	default permissions
 		return "ADESPI".$extraPerm;
 	}
 	// grant nothing by default
@@ -1668,6 +1724,11 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 		$_SESSION["_q_bandejaentrada_supervisores_OwnerID"] = $data["usr_personalid"];
 		$_SESSION["_hoja_ruta_2020_pn1_OwnerID"] = $data["usr_dep"];
 		$_SESSION["_hoja_ruta_2020_pn2_OwnerID"] = $data["usr_dep"];
+		$_SESSION["_hoja_ruta_2020_pnc_OwnerID"] = $data["Username"];
+		$_SESSION["_q_bandejaentrada_supervisores_c_OwnerID"] = $data["usr_personalid"];
+		$_SESSION["_hoja_ruta_2020_pn0_OwnerID"] = $data["Username"];
+		$_SESSION["_hoja_ruta_2020_pnc1_OwnerID"] = $data["Username"];
+		$_SESSION["_hoja_ruta_2020_pn3_OwnerID"] = $data["Username"];
 
 	$_SESSION["UserData"] = $data;
 
@@ -1748,6 +1809,30 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				return false;
 		}
 		if($table=="hoja_ruta_2020_pn2")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="hoja_ruta_2020_pnc")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="hoja_ruta_2020_pn0")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="hoja_ruta_2020_pnc1")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="hoja_ruta_2020_pn3")
 		{
 
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
@@ -1836,6 +1921,22 @@ function SecuritySQL($strAction, $table, $strPerm="")
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 		if($table=="hoja_ruta_2020_pn2")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="hoja_ruta_2020_pnc")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="hoja_ruta_2020_pn0")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="hoja_ruta_2020_pnc1")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="hoja_ruta_2020_pn3")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}

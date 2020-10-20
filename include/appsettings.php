@@ -550,7 +550,7 @@ $globalSettings["useCookieBanner"] = 1 != 0;
 
 
 $globalSettings["createLoginPage"] = true;
-$globalSettings["userGroupCount"] = 0;
+$globalSettings["userGroupCount"] = 1;
 
 
 $globalSettings["apiGoogleMapsCode"] = "";
@@ -646,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "462_1599239495";
+$projectBuildKey = "555_1602051316";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "462";
+$projectBuildNumber = "555";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -698,6 +698,11 @@ $tableCaptions["Spanish"]["ep_obligaciones_temp"] = "Ep Obligaciones Temp";
 $tableCaptions["Spanish"]["ep_registros"] = "Ep Registros";
 $tableCaptions["Spanish"]["ep_op_temp"] = "Ep Op Temp";
 $tableCaptions["Spanish"]["hoja_ruta_2020_pn2"] = "Hoja Ruta 2020 Pn2";
+$tableCaptions["Spanish"]["hoja_ruta_2020_pnc"] = "Hoja Ruta 2020 Pnc";
+$tableCaptions["Spanish"]["q_bandejaentrada_supervisores_c"] = "Q Bandejaentrada Supervisores C";
+$tableCaptions["Spanish"]["hoja_ruta_2020_pn0"] = "Hoja Ruta 2020 Pn0";
+$tableCaptions["Spanish"]["hoja_ruta_2020_pnc1"] = "Hoja Ruta 2020 Pnc1";
+$tableCaptions["Spanish"]["hoja_ruta_2020_pn3"] = "Hoja Ruta";
 
 
 $globalEvents = new class_GlobalEvents;

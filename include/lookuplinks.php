@@ -334,6 +334,181 @@ function InitLookupLinks()
 			$lookupTableLinks["dependencia"]["hoja_ruta_2020_pn2.sys_dep"] = array();
 		}
 		$lookupTableLinks["dependencia"]["hoja_ruta_2020_pn2.sys_dep"]["edit"] = array("table" => "hoja_ruta_2020_pn2", "field" => "sys_dep", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_bandejaentrada_supervisores_c"] ) ) {
+			$lookupTableLinks["q_bandejaentrada_supervisores_c"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_bandejaentrada_supervisores_c"]["hoja_ruta_2020_pnc.id_cont_fk"] )) {
+			$lookupTableLinks["q_bandejaentrada_supervisores_c"]["hoja_ruta_2020_pnc.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["q_bandejaentrada_supervisores_c"]["hoja_ruta_2020_pnc.id_cont_fk"]["edit"] = array("table" => "hoja_ruta_2020_pnc", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["hoja_ruta_2020_pnc.sys_dep"] )) {
+			$lookupTableLinks["dependencia"]["hoja_ruta_2020_pnc.sys_dep"] = array();
+		}
+		$lookupTableLinks["dependencia"]["hoja_ruta_2020_pnc.sys_dep"]["edit"] = array("table" => "hoja_ruta_2020_pnc", "field" => "sys_dep", "page" => "edit");
+		if( !isset( $lookupTableLinks["global_users"] ) ) {
+			$lookupTableLinks["global_users"] = array();
+		}
+		if( !isset( $lookupTableLinks["global_users"]["hoja_ruta_2020_pnc.sys_user"] )) {
+			$lookupTableLinks["global_users"]["hoja_ruta_2020_pnc.sys_user"] = array();
+		}
+		$lookupTableLinks["global_users"]["hoja_ruta_2020_pnc.sys_user"]["edit"] = array("table" => "hoja_ruta_2020_pnc", "field" => "sys_user", "page" => "edit");
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"] ) ) {
+			$lookupTableLinks["hoja_ruta_event_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pnc.evento_type_id_fk"] )) {
+			$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pnc.evento_type_id_fk"] = array();
+		}
+		$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pnc.evento_type_id_fk"]["edit"] = array("table" => "hoja_ruta_2020_pnc", "field" => "evento_type_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["nomina_cont_meses"] ) ) {
+			$lookupTableLinks["nomina_cont_meses"] = array();
+		}
+		if( !isset( $lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pnc.mes"] )) {
+			$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pnc.mes"] = array();
+		}
+		$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pnc.mes"]["edit"] = array("table" => "hoja_ruta_2020_pnc", "field" => "mes", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_estados"] ) ) {
+			$lookupTableLinks["contrato_estados"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores_c.cont_estado"] )) {
+			$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores_c.cont_estado"] = array();
+		}
+		$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores_c.cont_estado"]["edit"] = array("table" => "q_bandejaentrada_supervisores_c", "field" => "cont_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["cargo"] ) ) {
+			$lookupTableLinks["cargo"] = array();
+		}
+		if( !isset( $lookupTableLinks["cargo"]["q_bandejaentrada_supervisores_c.cargo_id"] )) {
+			$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores_c.cargo_id"] = array();
+		}
+		$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores_c.cargo_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores_c", "field" => "cargo_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores_c.dependencia_id"] )) {
+			$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores_c.dependencia_id"] = array();
+		}
+		$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores_c.dependencia_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores_c", "field" => "dependencia_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["hoja_ruta_2020_pn0.nombrecont"] )) {
+			$lookupTableLinks["contractor_master"]["hoja_ruta_2020_pn0.nombrecont"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["hoja_ruta_2020_pn0.nombrecont"]["edit"] = array("table" => "hoja_ruta_2020_pn0", "field" => "nombrecont", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_buscador_usuarios_all"] ) ) {
+			$lookupTableLinks["q_buscador_usuarios_all"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_buscador_usuarios_all"]["hoja_ruta_2020_pn0.sys_user"] )) {
+			$lookupTableLinks["q_buscador_usuarios_all"]["hoja_ruta_2020_pn0.sys_user"] = array();
+		}
+		$lookupTableLinks["q_buscador_usuarios_all"]["hoja_ruta_2020_pn0.sys_user"]["edit"] = array("table" => "hoja_ruta_2020_pn0", "field" => "sys_user", "page" => "edit");
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"] ) ) {
+			$lookupTableLinks["hoja_ruta_event_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pn0.evento_type_id_fk"] )) {
+			$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pn0.evento_type_id_fk"] = array();
+		}
+		$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pn0.evento_type_id_fk"]["edit"] = array("table" => "hoja_ruta_2020_pn0", "field" => "evento_type_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["global_users"] ) ) {
+			$lookupTableLinks["global_users"] = array();
+		}
+		if( !isset( $lookupTableLinks["global_users"]["hoja_ruta_2020_pn0.user_from"] )) {
+			$lookupTableLinks["global_users"]["hoja_ruta_2020_pn0.user_from"] = array();
+		}
+		$lookupTableLinks["global_users"]["hoja_ruta_2020_pn0.user_from"]["edit"] = array("table" => "hoja_ruta_2020_pn0", "field" => "user_from", "page" => "edit");
+		if( !isset( $lookupTableLinks["nomina_cont_meses"] ) ) {
+			$lookupTableLinks["nomina_cont_meses"] = array();
+		}
+		if( !isset( $lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pn0.mes"] )) {
+			$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pn0.mes"] = array();
+		}
+		$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pn0.mes"]["edit"] = array("table" => "hoja_ruta_2020_pn0", "field" => "mes", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["hoja_ruta_2020_pn0.sys_dep"] )) {
+			$lookupTableLinks["dependencia"]["hoja_ruta_2020_pn0.sys_dep"] = array();
+		}
+		$lookupTableLinks["dependencia"]["hoja_ruta_2020_pn0.sys_dep"]["edit"] = array("table" => "hoja_ruta_2020_pn0", "field" => "sys_dep", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_bandejaentrada_supervisores_c"] ) ) {
+			$lookupTableLinks["q_bandejaentrada_supervisores_c"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_bandejaentrada_supervisores_c"]["hoja_ruta_2020_pnc1.id_cont_fk"] )) {
+			$lookupTableLinks["q_bandejaentrada_supervisores_c"]["hoja_ruta_2020_pnc1.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["q_bandejaentrada_supervisores_c"]["hoja_ruta_2020_pnc1.id_cont_fk"]["edit"] = array("table" => "hoja_ruta_2020_pnc1", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["hoja_ruta_2020_pnc1.sys_dep"] )) {
+			$lookupTableLinks["dependencia"]["hoja_ruta_2020_pnc1.sys_dep"] = array();
+		}
+		$lookupTableLinks["dependencia"]["hoja_ruta_2020_pnc1.sys_dep"]["edit"] = array("table" => "hoja_ruta_2020_pnc1", "field" => "sys_dep", "page" => "edit");
+		if( !isset( $lookupTableLinks["global_users"] ) ) {
+			$lookupTableLinks["global_users"] = array();
+		}
+		if( !isset( $lookupTableLinks["global_users"]["hoja_ruta_2020_pnc1.sys_user"] )) {
+			$lookupTableLinks["global_users"]["hoja_ruta_2020_pnc1.sys_user"] = array();
+		}
+		$lookupTableLinks["global_users"]["hoja_ruta_2020_pnc1.sys_user"]["edit"] = array("table" => "hoja_ruta_2020_pnc1", "field" => "sys_user", "page" => "edit");
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"] ) ) {
+			$lookupTableLinks["hoja_ruta_event_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pnc1.evento_type_id_fk"] )) {
+			$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pnc1.evento_type_id_fk"] = array();
+		}
+		$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pnc1.evento_type_id_fk"]["edit"] = array("table" => "hoja_ruta_2020_pnc1", "field" => "evento_type_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["nomina_cont_meses"] ) ) {
+			$lookupTableLinks["nomina_cont_meses"] = array();
+		}
+		if( !isset( $lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pnc1.mes"] )) {
+			$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pnc1.mes"] = array();
+		}
+		$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pnc1.mes"]["edit"] = array("table" => "hoja_ruta_2020_pnc1", "field" => "mes", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["hoja_ruta_2020_pn3.nombrecont"] )) {
+			$lookupTableLinks["contractor_master"]["hoja_ruta_2020_pn3.nombrecont"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["hoja_ruta_2020_pn3.nombrecont"]["edit"] = array("table" => "hoja_ruta_2020_pn3", "field" => "nombrecont", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_buscador_usuarios_all"] ) ) {
+			$lookupTableLinks["q_buscador_usuarios_all"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_buscador_usuarios_all"]["hoja_ruta_2020_pn3.sys_user"] )) {
+			$lookupTableLinks["q_buscador_usuarios_all"]["hoja_ruta_2020_pn3.sys_user"] = array();
+		}
+		$lookupTableLinks["q_buscador_usuarios_all"]["hoja_ruta_2020_pn3.sys_user"]["edit"] = array("table" => "hoja_ruta_2020_pn3", "field" => "sys_user", "page" => "edit");
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"] ) ) {
+			$lookupTableLinks["hoja_ruta_event_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pn3.evento_type_id_fk"] )) {
+			$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pn3.evento_type_id_fk"] = array();
+		}
+		$lookupTableLinks["hoja_ruta_event_type"]["hoja_ruta_2020_pn3.evento_type_id_fk"]["edit"] = array("table" => "hoja_ruta_2020_pn3", "field" => "evento_type_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["global_users"] ) ) {
+			$lookupTableLinks["global_users"] = array();
+		}
+		if( !isset( $lookupTableLinks["global_users"]["hoja_ruta_2020_pn3.user_from"] )) {
+			$lookupTableLinks["global_users"]["hoja_ruta_2020_pn3.user_from"] = array();
+		}
+		$lookupTableLinks["global_users"]["hoja_ruta_2020_pn3.user_from"]["edit"] = array("table" => "hoja_ruta_2020_pn3", "field" => "user_from", "page" => "edit");
+		if( !isset( $lookupTableLinks["nomina_cont_meses"] ) ) {
+			$lookupTableLinks["nomina_cont_meses"] = array();
+		}
+		if( !isset( $lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pn3.mes"] )) {
+			$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pn3.mes"] = array();
+		}
+		$lookupTableLinks["nomina_cont_meses"]["hoja_ruta_2020_pn3.mes"]["edit"] = array("table" => "hoja_ruta_2020_pn3", "field" => "mes", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["hoja_ruta_2020_pn3.sys_dep"] )) {
+			$lookupTableLinks["dependencia"]["hoja_ruta_2020_pn3.sys_dep"] = array();
+		}
+		$lookupTableLinks["dependencia"]["hoja_ruta_2020_pn3.sys_dep"]["edit"] = array("table" => "hoja_ruta_2020_pn3", "field" => "sys_dep", "page" => "edit");
 }
 
 ?>

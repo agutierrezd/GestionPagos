@@ -2324,6 +2324,70 @@ $masterTablesData["hoja_ruta_2020_tracking"] = array();
 				$masterTablesData["hoja_ruta_2020_tracking"][2]["detailKeys"] = array();
 	$masterTablesData["hoja_ruta_2020_tracking"][2]["detailKeys"][]="hr_id_fk";
 		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pnc";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pnc";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_tracking"][3] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_tracking"][3]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][3]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_tracking"][3]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][3]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pn0";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pn0";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_tracking"][4] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_tracking"][4]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][4]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_tracking"][4]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][4]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pnc1";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pnc1";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_tracking"][5] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_tracking"][5]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][5]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_tracking"][5]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][5]["detailKeys"][]="hr_id_fk";
+		
+	
+				$strOriginalDetailsTable="hoja_ruta_2020";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="hoja_ruta_2020_pn3";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "hoja_ruta_2020_pn3";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["hoja_ruta_2020_tracking"][6] = $masterParams;
+				$masterTablesData["hoja_ruta_2020_tracking"][6]["masterKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][6]["masterKeys"][]="hr_id";
+				$masterTablesData["hoja_ruta_2020_tracking"][6]["detailKeys"] = array();
+	$masterTablesData["hoja_ruta_2020_tracking"][6]["detailKeys"][]="hr_id_fk";
+		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 

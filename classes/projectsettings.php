@@ -3157,6 +3157,16 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "ep_op_temp" ] = "ep_op_temp";
 	$projectEntities[ "hoja_ruta_2020_pn2" ] = array( "url" => "hoja_ruta_2020_pn2", "type" => 1 );
 	$projectEntitiesReverse[ "hoja_ruta_2020_pn2" ] = "hoja_ruta_2020_pn2";
+	$projectEntities[ "hoja_ruta_2020_pnc" ] = array( "url" => "hoja_ruta_2020_pnc", "type" => 1 );
+	$projectEntitiesReverse[ "hoja_ruta_2020_pnc" ] = "hoja_ruta_2020_pnc";
+	$projectEntities[ "q_bandejaentrada_supervisores_c" ] = array( "url" => "q_bandejaentrada_supervisores_c", "type" => 1 );
+	$projectEntitiesReverse[ "q_bandejaentrada_supervisores_c" ] = "q_bandejaentrada_supervisores_c";
+	$projectEntities[ "hoja_ruta_2020_pn0" ] = array( "url" => "hoja_ruta_2020_pn0", "type" => 1 );
+	$projectEntitiesReverse[ "hoja_ruta_2020_pn0" ] = "hoja_ruta_2020_pn0";
+	$projectEntities[ "hoja_ruta_2020_pnc1" ] = array( "url" => "hoja_ruta_2020_pnc1", "type" => 1 );
+	$projectEntitiesReverse[ "hoja_ruta_2020_pnc1" ] = "hoja_ruta_2020_pnc1";
+	$projectEntities[ "hoja_ruta_2020_pn3" ] = array( "url" => "hoja_ruta_2020_pn3", "type" => 1 );
+	$projectEntitiesReverse[ "hoja_ruta_2020_pn3" ] = "hoja_ruta_2020_pn3";
 }
 
 function findTable( $table ) {

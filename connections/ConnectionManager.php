@@ -444,6 +444,11 @@ class ConnectionManager
 		$connectionsIds["ep_registros"] = "sep2_at_127_0_0_1";
 		$connectionsIds["ep_op_temp"] = "sep2_at_127_0_0_1";
 		$connectionsIds["hoja_ruta_2020_pn2"] = "dbct_at_127_0_0_1";
+		$connectionsIds["hoja_ruta_2020_pnc"] = "dbct_at_127_0_0_1";
+		$connectionsIds["q_bandejaentrada_supervisores_c"] = "dbct_at_127_0_0_1";
+		$connectionsIds["hoja_ruta_2020_pn0"] = "dbct_at_127_0_0_1";
+		$connectionsIds["hoja_ruta_2020_pnc1"] = "dbct_at_127_0_0_1";
+		$connectionsIds["hoja_ruta_2020_pn3"] = "dbct_at_127_0_0_1";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

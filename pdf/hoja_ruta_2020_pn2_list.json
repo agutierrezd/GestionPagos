@@ -992,6 +992,11 @@ pdfDocument = {
 			{$displayDetailTable_hoja_ruta_op }
 		{END details_hoja_ruta_op},
 				
+				
+			 {BEGIN details_q_info_cont}
+			{$displayDetailTable_q_info_cont }
+		{END details_q_info_cont},
+				
 		  ],
   "border": [ true, true, true, true ],
           "alignment": 'left',

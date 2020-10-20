@@ -2211,8 +2211,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_grid_field_label24}","text":"{$jslabel q_info_cont Username }","bold":true},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
   },
@@ -2235,10 +2237,12 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_grid_field24}","text":{$Username_pdfvalue}},
+				
+		  ],
   "border": [ false, false, false, false ],
-          "alignment": 'left',
+          "alignment": '{$Username_align}',
   },
 
 {END cellblock_grid_cell_field34}

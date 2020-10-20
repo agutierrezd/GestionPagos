@@ -1,6 +1,9 @@
 <?php
 			$optionsArray = array( 'master' => array( 'hoja_ruta_2020_pn1' => array( 'preview' => false ),
-'hoja_ruta_2020_pn2' => array( 'preview' => false ) ),
+'hoja_ruta_2020_pn2' => array( 'preview' => false ),
+'hoja_ruta_2020_pn0' => array( 'preview' => false ),
+'hoja_ruta_2020_pnc1' => array( 'preview' => false ),
+'hoja_ruta_2020_pn3' => array( 'preview' => false ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'hr_id_fk',
 'id_cont_fk',

@@ -548,6 +548,16 @@ class Chart
 			return true;
 		if("hoja_ruta_2020" == $this->chrt_array['tables'][0])
 			return true;
+		if("hoja_ruta_2020" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_bandejaentrada_supervisores" == $this->chrt_array['tables'][0])
+			return true;
+		if("hoja_ruta_2020" == $this->chrt_array['tables'][0])
+			return true;
+		if("hoja_ruta_2020" == $this->chrt_array['tables'][0])
+			return true;
+		if("hoja_ruta_2020" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

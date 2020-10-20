@@ -103,6 +103,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsq_buscador_usuarios_all["Spanish"]["usr_nombresfull"] = "Nombres";
 	$fieldToolTipsq_buscador_usuarios_all["Spanish"]["usr_nombresfull"] = "";
 	$placeHoldersq_buscador_usuarios_all["Spanish"]["usr_nombresfull"] = "";
+	$fieldLabelsq_buscador_usuarios_all["Spanish"]["usr_status_nomina"] = "Usr Status Nomina";
+	$fieldToolTipsq_buscador_usuarios_all["Spanish"]["usr_status_nomina"] = "";
+	$placeHoldersq_buscador_usuarios_all["Spanish"]["usr_status_nomina"] = "";
 	if (count($fieldToolTipsq_buscador_usuarios_all["Spanish"]))
 		$tdataq_buscador_usuarios_all[".isUseToolTips"] = true;
 }
@@ -250,6 +253,7 @@ $tdataq_buscador_usuarios_all[".googleLikeFields"][] = "grado";
 $tdataq_buscador_usuarios_all[".googleLikeFields"][] = "nombre_dependencia";
 $tdataq_buscador_usuarios_all[".googleLikeFields"][] = "Departamento_superior";
 $tdataq_buscador_usuarios_all[".googleLikeFields"][] = "usr_nombresfull";
+$tdataq_buscador_usuarios_all[".googleLikeFields"][] = "usr_status_nomina";
 
 
 
@@ -284,7 +288,7 @@ $tdataq_buscador_usuarios_all[".strOrderBy"] = $tstrOrderBy;
 
 $tdataq_buscador_usuarios_all[".orderindexes"] = array();
 
-$tdataq_buscador_usuarios_all[".sqlHead"] = "SELECT idusrglobal,  	Username,  	usr_email,  	usr_name,  	usr_lname,  	usr_personalid,  	usr_image,  	BUSCADOR,  	usr_status,  	status_name,  	usr_dependencia,  	usr_emergencia,  	usr_extension,  	usr_piso,  	global_rol_me,  	usr_minequipo_lider,  	usr_minequipo_grupo,  	usr_dep,  	usr_cargo,  	nombre_de_cargo,  	cargo,  	grado,  	nombre_dependencia,  	Departamento_superior,  	usr_nombresfull";
+$tdataq_buscador_usuarios_all[".sqlHead"] = "SELECT idusrglobal,  	Username,  	usr_email,  	usr_name,  	usr_lname,  	usr_personalid,  	usr_image,  	BUSCADOR,  	usr_status,  	status_name,  	usr_dependencia,  	usr_emergencia,  	usr_extension,  	usr_piso,  	global_rol_me,  	usr_minequipo_lider,  	usr_minequipo_grupo,  	usr_dep,  	usr_cargo,  	nombre_de_cargo,  	cargo,  	grado,  	nombre_dependencia,  	Departamento_superior,  	usr_nombresfull,  	usr_status_nomina";
 $tdataq_buscador_usuarios_all[".sqlFrom"] = "FROM q_buscador_usuarios_all";
 $tdataq_buscador_usuarios_all[".sqlWhereExpr"] = "";
 $tdataq_buscador_usuarios_all[".sqlTail"] = "";
@@ -3706,6 +3710,141 @@ $tdataq_buscador_usuarios_all[".hideMobileList"] = array();
 
 	$tdataq_buscador_usuarios_all["usr_nombresfull"] = $fdata;
 		$tdataq_buscador_usuarios_all[".searchableFields"][] = "usr_nombresfull";
+//	usr_status_nomina
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 26;
+	$fdata["strName"] = "usr_status_nomina";
+	$fdata["GoodName"] = "usr_status_nomina";
+	$fdata["ownerTable"] = "q_buscador_usuarios_all";
+	$fdata["Label"] = GetFieldLabel("q_buscador_usuarios_all","usr_status_nomina");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "usr_status_nomina";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "usr_status_nomina";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_buscador_usuarios_all["usr_status_nomina"] = $fdata;
+		$tdataq_buscador_usuarios_all[".searchableFields"][] = "usr_status_nomina";
 
 
 $tables_data["q_buscador_usuarios_all"]=&$tdataq_buscador_usuarios_all;
@@ -3741,7 +3880,7 @@ function createSqlQuery_q_buscador_usuarios_all()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "idusrglobal,  	Username,  	usr_email,  	usr_name,  	usr_lname,  	usr_personalid,  	usr_image,  	BUSCADOR,  	usr_status,  	status_name,  	usr_dependencia,  	usr_emergencia,  	usr_extension,  	usr_piso,  	global_rol_me,  	usr_minequipo_lider,  	usr_minequipo_grupo,  	usr_dep,  	usr_cargo,  	nombre_de_cargo,  	cargo,  	grado,  	nombre_dependencia,  	Departamento_superior,  	usr_nombresfull";
+$proto0["m_strFieldList"] = "idusrglobal,  	Username,  	usr_email,  	usr_name,  	usr_lname,  	usr_personalid,  	usr_image,  	BUSCADOR,  	usr_status,  	status_name,  	usr_dependencia,  	usr_emergencia,  	usr_extension,  	usr_piso,  	global_rol_me,  	usr_minequipo_lider,  	usr_minequipo_grupo,  	usr_dep,  	usr_cargo,  	nombre_de_cargo,  	cargo,  	grado,  	nombre_dependencia,  	Departamento_superior,  	usr_nombresfull,  	usr_status_nomina";
 $proto0["m_strFrom"] = "FROM q_buscador_usuarios_all";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -4131,61 +4270,76 @@ $proto54["m_alias"] = "";
 $obj = new SQLFieldListItem($proto54);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto56=array();
-$proto56["m_link"] = "SQLL_MAIN";
-			$proto57=array();
-$proto57["m_strName"] = "q_buscador_usuarios_all";
-$proto57["m_srcTableName"] = "q_buscador_usuarios_all";
-$proto57["m_columns"] = array();
-$proto57["m_columns"][] = "idusrglobal";
-$proto57["m_columns"][] = "Username";
-$proto57["m_columns"][] = "usr_email";
-$proto57["m_columns"][] = "usr_name";
-$proto57["m_columns"][] = "usr_lname";
-$proto57["m_columns"][] = "usr_personalid";
-$proto57["m_columns"][] = "usr_image";
-$proto57["m_columns"][] = "BUSCADOR";
-$proto57["m_columns"][] = "usr_status";
-$proto57["m_columns"][] = "status_name";
-$proto57["m_columns"][] = "usr_dependencia";
-$proto57["m_columns"][] = "usr_emergencia";
-$proto57["m_columns"][] = "usr_extension";
-$proto57["m_columns"][] = "usr_piso";
-$proto57["m_columns"][] = "global_rol_me";
-$proto57["m_columns"][] = "usr_minequipo_lider";
-$proto57["m_columns"][] = "usr_minequipo_grupo";
-$proto57["m_columns"][] = "usr_dep";
-$proto57["m_columns"][] = "usr_cargo";
-$proto57["m_columns"][] = "nombre_de_cargo";
-$proto57["m_columns"][] = "cargo";
-$proto57["m_columns"][] = "grado";
-$proto57["m_columns"][] = "nombre_dependencia";
-$proto57["m_columns"][] = "Departamento_superior";
-$proto57["m_columns"][] = "usr_nombresfull";
-$obj = new SQLTable($proto57);
+						$proto56=array();
+			$obj = new SQLField(array(
+	"m_strName" => "usr_status_nomina",
+	"m_strTable" => "q_buscador_usuarios_all",
+	"m_srcTableName" => "q_buscador_usuarios_all"
+));
 
-$proto56["m_table"] = $obj;
-$proto56["m_sql"] = "q_buscador_usuarios_all";
-$proto56["m_alias"] = "";
+$proto56["m_sql"] = "usr_status_nomina";
 $proto56["m_srcTableName"] = "q_buscador_usuarios_all";
-$proto58=array();
-$proto58["m_sql"] = "";
-$proto58["m_uniontype"] = "SQLL_UNKNOWN";
+$proto56["m_expr"]=$obj;
+$proto56["m_alias"] = "";
+$obj = new SQLFieldListItem($proto56);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto58=array();
+$proto58["m_link"] = "SQLL_MAIN";
+			$proto59=array();
+$proto59["m_strName"] = "q_buscador_usuarios_all";
+$proto59["m_srcTableName"] = "q_buscador_usuarios_all";
+$proto59["m_columns"] = array();
+$proto59["m_columns"][] = "idusrglobal";
+$proto59["m_columns"][] = "Username";
+$proto59["m_columns"][] = "usr_email";
+$proto59["m_columns"][] = "usr_name";
+$proto59["m_columns"][] = "usr_lname";
+$proto59["m_columns"][] = "usr_personalid";
+$proto59["m_columns"][] = "usr_image";
+$proto59["m_columns"][] = "BUSCADOR";
+$proto59["m_columns"][] = "usr_status";
+$proto59["m_columns"][] = "status_name";
+$proto59["m_columns"][] = "usr_dependencia";
+$proto59["m_columns"][] = "usr_emergencia";
+$proto59["m_columns"][] = "usr_extension";
+$proto59["m_columns"][] = "usr_piso";
+$proto59["m_columns"][] = "global_rol_me";
+$proto59["m_columns"][] = "usr_minequipo_lider";
+$proto59["m_columns"][] = "usr_minequipo_grupo";
+$proto59["m_columns"][] = "usr_dep";
+$proto59["m_columns"][] = "usr_cargo";
+$proto59["m_columns"][] = "nombre_de_cargo";
+$proto59["m_columns"][] = "cargo";
+$proto59["m_columns"][] = "grado";
+$proto59["m_columns"][] = "nombre_dependencia";
+$proto59["m_columns"][] = "Departamento_superior";
+$proto59["m_columns"][] = "usr_nombresfull";
+$proto59["m_columns"][] = "usr_status_nomina";
+$obj = new SQLTable($proto59);
+
+$proto58["m_table"] = $obj;
+$proto58["m_sql"] = "q_buscador_usuarios_all";
+$proto58["m_alias"] = "";
+$proto58["m_srcTableName"] = "q_buscador_usuarios_all";
+$proto60=array();
+$proto60["m_sql"] = "";
+$proto60["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto58["m_column"]=$obj;
-$proto58["m_contained"] = array();
-$proto58["m_strCase"] = "";
-$proto58["m_havingmode"] = false;
-$proto58["m_inBrackets"] = false;
-$proto58["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto58);
+$proto60["m_column"]=$obj;
+$proto60["m_contained"] = array();
+$proto60["m_strCase"] = "";
+$proto60["m_havingmode"] = false;
+$proto60["m_inBrackets"] = false;
+$proto60["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto60);
 
-$proto56["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto56);
+$proto58["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto58);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -4201,7 +4355,7 @@ $queryData_q_buscador_usuarios_all = createSqlQuery_q_buscador_usuarios_all();
 	
 								;
 
-																									
+																										
 
 $tdataq_buscador_usuarios_all[".sqlquery"] = $queryData_q_buscador_usuarios_all;
 

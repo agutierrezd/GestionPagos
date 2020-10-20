@@ -129,7 +129,7 @@ class EditSignaturePad extends UserControl
 			$this->webValue = prepare_for_db($this->field, $this->webValue, $this->webType);
 		else
 			$this->webValue = false;
-		if( $this->webValue )
+		if( $this->webValue || 1==1)
 		{
 			// save signature to file
 			require_once 'signature-to-image.php';

@@ -41,6 +41,11 @@ $nonAdminTablesArr[] = "ep_obligaciones_temp";
 $nonAdminTablesArr[] = "ep_registros";
 $nonAdminTablesArr[] = "ep_op_temp";
 $nonAdminTablesArr[] = "hoja_ruta_2020_pn2";
+$nonAdminTablesArr[] = "hoja_ruta_2020_pnc";
+$nonAdminTablesArr[] = "q_bandejaentrada_supervisores_c";
+$nonAdminTablesArr[] = "hoja_ruta_2020_pn0";
+$nonAdminTablesArr[] = "hoja_ruta_2020_pnc1";
+$nonAdminTablesArr[] = "hoja_ruta_2020_pn3";
 
 $ug_connection = $cman->getForUserGroups();
 

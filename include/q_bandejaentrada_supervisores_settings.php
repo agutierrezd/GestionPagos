@@ -184,6 +184,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsq_bandejaentrada_supervisores["Spanish"]["cont_modifica"] = "Cont Modifica";
 	$fieldToolTipsq_bandejaentrada_supervisores["Spanish"]["cont_modifica"] = "";
 	$placeHoldersq_bandejaentrada_supervisores["Spanish"]["cont_modifica"] = "";
+	$fieldLabelsq_bandejaentrada_supervisores["Spanish"]["Username"] = "Username";
+	$fieldToolTipsq_bandejaentrada_supervisores["Spanish"]["Username"] = "";
+	$placeHoldersq_bandejaentrada_supervisores["Spanish"]["Username"] = "";
 	if (count($fieldToolTipsq_bandejaentrada_supervisores["Spanish"]))
 		$tdataq_bandejaentrada_supervisores[".isUseToolTips"] = true;
 }
@@ -358,6 +361,7 @@ $tdataq_bandejaentrada_supervisores[".googleLikeFields"][] = "cont_fechaapertura
 $tdataq_bandejaentrada_supervisores[".googleLikeFields"][] = "cont_munejec";
 $tdataq_bandejaentrada_supervisores[".googleLikeFields"][] = "cont_cesion";
 $tdataq_bandejaentrada_supervisores[".googleLikeFields"][] = "cont_modifica";
+$tdataq_bandejaentrada_supervisores[".googleLikeFields"][] = "Username";
 
 
 
@@ -392,7 +396,7 @@ $tdataq_bandejaentrada_supervisores[".strOrderBy"] = $tstrOrderBy;
 
 $tdataq_bandejaentrada_supervisores[".orderindexes"] = array();
 
-$tdataq_bandejaentrada_supervisores[".sqlHead"] = "SELECT id_cont,  	cont_nit_contra_ta,  	cont_estado,  	numcontrato,  	pre_contnumero,  	contnumero,  	cont_ano,  	cont_codrubro,  	cont_catalogo_presupuestal,  	cont_fecha_inicio,  	cont_fechafinal,  	PLAZO,  	cont_periodicidad,  	cont_valorinicial,  	cont_valormensual,  	cont_secop_enlace,  	documento_id,  	nombres,  	apellidos,  	nombresupfull,  	cargo_id,  	dependencia_id,  	sup_fechanot,  	sup_mailnot,  	sup_status,  	idusrglobal_fk,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	prenumero,  	numregistro,  	cont_unspsc,  	cont_tipo_rubro,  	cont_tipopre,  	cont_causalc,  	cont_objeto,  	cont_obligaciones,  	cont_plazo,  	ctb_tipo_nombre,  	nombre_cargo,  	nombre_dependencia,  	id_depto_superior,  	Departamento_superior,  	cont_numpoliza,  	cont_secop_proceso,  	cont_fecha_aprobgarantia,  	cont_fechaapertura,  	cont_munejec,  	cont_cesion,  	cont_modifica";
+$tdataq_bandejaentrada_supervisores[".sqlHead"] = "SELECT id_cont,  	cont_nit_contra_ta,  	cont_estado,  	numcontrato,  	pre_contnumero,  	contnumero,  	cont_ano,  	cont_codrubro,  	cont_catalogo_presupuestal,  	cont_fecha_inicio,  	cont_fechafinal,  	PLAZO,  	cont_periodicidad,  	cont_valorinicial,  	cont_valormensual,  	cont_secop_enlace,  	documento_id,  	nombres,  	apellidos,  	nombresupfull,  	cargo_id,  	dependencia_id,  	sup_fechanot,  	sup_mailnot,  	sup_status,  	idusrglobal_fk,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	prenumero,  	numregistro,  	cont_unspsc,  	cont_tipo_rubro,  	cont_tipopre,  	cont_causalc,  	cont_objeto,  	cont_obligaciones,  	cont_plazo,  	ctb_tipo_nombre,  	nombre_cargo,  	nombre_dependencia,  	id_depto_superior,  	Departamento_superior,  	cont_numpoliza,  	cont_secop_proceso,  	cont_fecha_aprobgarantia,  	cont_fechaapertura,  	cont_munejec,  	cont_cesion,  	cont_modifica,  	Username";
 $tdataq_bandejaentrada_supervisores[".sqlFrom"] = "FROM q_bandejaentrada_supervisores";
 $tdataq_bandejaentrada_supervisores[".sqlWhereExpr"] = "";
 $tdataq_bandejaentrada_supervisores[".sqlTail"] = "";
@@ -7545,6 +7549,141 @@ $tdataq_bandejaentrada_supervisores[".hideMobileList"] = array();
 
 	$tdataq_bandejaentrada_supervisores["cont_modifica"] = $fdata;
 		$tdataq_bandejaentrada_supervisores[".searchableFields"][] = "cont_modifica";
+//	Username
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 53;
+	$fdata["strName"] = "Username";
+	$fdata["GoodName"] = "Username";
+	$fdata["ownerTable"] = "q_bandejaentrada_supervisores";
+	$fdata["Label"] = GetFieldLabel("q_bandejaentrada_supervisores","Username");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "Username";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Username";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=30";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_bandejaentrada_supervisores["Username"] = $fdata;
+		$tdataq_bandejaentrada_supervisores[".searchableFields"][] = "Username";
 
 
 $tables_data["q_bandejaentrada_supervisores"]=&$tdataq_bandejaentrada_supervisores;
@@ -7580,7 +7719,7 @@ function createSqlQuery_q_bandejaentrada_supervisores()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id_cont,  	cont_nit_contra_ta,  	cont_estado,  	numcontrato,  	pre_contnumero,  	contnumero,  	cont_ano,  	cont_codrubro,  	cont_catalogo_presupuestal,  	cont_fecha_inicio,  	cont_fechafinal,  	PLAZO,  	cont_periodicidad,  	cont_valorinicial,  	cont_valormensual,  	cont_secop_enlace,  	documento_id,  	nombres,  	apellidos,  	nombresupfull,  	cargo_id,  	dependencia_id,  	sup_fechanot,  	sup_mailnot,  	sup_status,  	idusrglobal_fk,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	prenumero,  	numregistro,  	cont_unspsc,  	cont_tipo_rubro,  	cont_tipopre,  	cont_causalc,  	cont_objeto,  	cont_obligaciones,  	cont_plazo,  	ctb_tipo_nombre,  	nombre_cargo,  	nombre_dependencia,  	id_depto_superior,  	Departamento_superior,  	cont_numpoliza,  	cont_secop_proceso,  	cont_fecha_aprobgarantia,  	cont_fechaapertura,  	cont_munejec,  	cont_cesion,  	cont_modifica";
+$proto0["m_strFieldList"] = "id_cont,  	cont_nit_contra_ta,  	cont_estado,  	numcontrato,  	pre_contnumero,  	contnumero,  	cont_ano,  	cont_codrubro,  	cont_catalogo_presupuestal,  	cont_fecha_inicio,  	cont_fechafinal,  	PLAZO,  	cont_periodicidad,  	cont_valorinicial,  	cont_valormensual,  	cont_secop_enlace,  	documento_id,  	nombres,  	apellidos,  	nombresupfull,  	cargo_id,  	dependencia_id,  	sup_fechanot,  	sup_mailnot,  	sup_status,  	idusrglobal_fk,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	prenumero,  	numregistro,  	cont_unspsc,  	cont_tipo_rubro,  	cont_tipopre,  	cont_causalc,  	cont_objeto,  	cont_obligaciones,  	cont_plazo,  	ctb_tipo_nombre,  	nombre_cargo,  	nombre_dependencia,  	id_depto_superior,  	Departamento_superior,  	cont_numpoliza,  	cont_secop_proceso,  	cont_fecha_aprobgarantia,  	cont_fechaapertura,  	cont_munejec,  	cont_cesion,  	cont_modifica,  	Username";
 $proto0["m_strFrom"] = "FROM q_bandejaentrada_supervisores";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8348,88 +8487,103 @@ $proto108["m_alias"] = "";
 $obj = new SQLFieldListItem($proto108);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto110=array();
-$proto110["m_link"] = "SQLL_MAIN";
-			$proto111=array();
-$proto111["m_strName"] = "q_bandejaentrada_supervisores";
-$proto111["m_srcTableName"] = "q_bandejaentrada_supervisores";
-$proto111["m_columns"] = array();
-$proto111["m_columns"][] = "id_cont";
-$proto111["m_columns"][] = "cont_nit_contra_ta";
-$proto111["m_columns"][] = "cont_estado";
-$proto111["m_columns"][] = "numcontrato";
-$proto111["m_columns"][] = "pre_contnumero";
-$proto111["m_columns"][] = "contnumero";
-$proto111["m_columns"][] = "cont_ano";
-$proto111["m_columns"][] = "cont_codrubro";
-$proto111["m_columns"][] = "cont_catalogo_presupuestal";
-$proto111["m_columns"][] = "cont_fecha_inicio";
-$proto111["m_columns"][] = "cont_fechafinal";
-$proto111["m_columns"][] = "PLAZO";
-$proto111["m_columns"][] = "cont_periodicidad";
-$proto111["m_columns"][] = "cont_valorinicial";
-$proto111["m_columns"][] = "cont_valormensual";
-$proto111["m_columns"][] = "cont_secop_enlace";
-$proto111["m_columns"][] = "documento_id";
-$proto111["m_columns"][] = "nombres";
-$proto111["m_columns"][] = "apellidos";
-$proto111["m_columns"][] = "nombresupfull";
-$proto111["m_columns"][] = "cargo_id";
-$proto111["m_columns"][] = "dependencia_id";
-$proto111["m_columns"][] = "sup_fechanot";
-$proto111["m_columns"][] = "sup_mailnot";
-$proto111["m_columns"][] = "sup_status";
-$proto111["m_columns"][] = "idusrglobal_fk";
-$proto111["m_columns"][] = "contractor_name";
-$proto111["m_columns"][] = "contractor_lname";
-$proto111["m_columns"][] = "contractor_nombresfull";
-$proto111["m_columns"][] = "contractor_email";
-$proto111["m_columns"][] = "contractor_email_mincit";
-$proto111["m_columns"][] = "prenumero";
-$proto111["m_columns"][] = "numregistro";
-$proto111["m_columns"][] = "cont_unspsc";
-$proto111["m_columns"][] = "cont_tipo_rubro";
-$proto111["m_columns"][] = "cont_tipopre";
-$proto111["m_columns"][] = "cont_causalc";
-$proto111["m_columns"][] = "cont_objeto";
-$proto111["m_columns"][] = "cont_obligaciones";
-$proto111["m_columns"][] = "cont_plazo";
-$proto111["m_columns"][] = "ctb_tipo_nombre";
-$proto111["m_columns"][] = "nombre_cargo";
-$proto111["m_columns"][] = "nombre_dependencia";
-$proto111["m_columns"][] = "id_depto_superior";
-$proto111["m_columns"][] = "Departamento_superior";
-$proto111["m_columns"][] = "cont_numpoliza";
-$proto111["m_columns"][] = "cont_secop_proceso";
-$proto111["m_columns"][] = "cont_fecha_aprobgarantia";
-$proto111["m_columns"][] = "cont_fechaapertura";
-$proto111["m_columns"][] = "cont_munejec";
-$proto111["m_columns"][] = "cont_cesion";
-$proto111["m_columns"][] = "cont_modifica";
-$obj = new SQLTable($proto111);
+						$proto110=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Username",
+	"m_strTable" => "q_bandejaentrada_supervisores",
+	"m_srcTableName" => "q_bandejaentrada_supervisores"
+));
 
-$proto110["m_table"] = $obj;
-$proto110["m_sql"] = "q_bandejaentrada_supervisores";
-$proto110["m_alias"] = "";
+$proto110["m_sql"] = "Username";
 $proto110["m_srcTableName"] = "q_bandejaentrada_supervisores";
-$proto112=array();
-$proto112["m_sql"] = "";
-$proto112["m_uniontype"] = "SQLL_UNKNOWN";
+$proto110["m_expr"]=$obj;
+$proto110["m_alias"] = "";
+$obj = new SQLFieldListItem($proto110);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto112=array();
+$proto112["m_link"] = "SQLL_MAIN";
+			$proto113=array();
+$proto113["m_strName"] = "q_bandejaentrada_supervisores";
+$proto113["m_srcTableName"] = "q_bandejaentrada_supervisores";
+$proto113["m_columns"] = array();
+$proto113["m_columns"][] = "id_cont";
+$proto113["m_columns"][] = "cont_nit_contra_ta";
+$proto113["m_columns"][] = "cont_estado";
+$proto113["m_columns"][] = "numcontrato";
+$proto113["m_columns"][] = "pre_contnumero";
+$proto113["m_columns"][] = "contnumero";
+$proto113["m_columns"][] = "cont_ano";
+$proto113["m_columns"][] = "cont_codrubro";
+$proto113["m_columns"][] = "cont_catalogo_presupuestal";
+$proto113["m_columns"][] = "cont_fecha_inicio";
+$proto113["m_columns"][] = "cont_fechafinal";
+$proto113["m_columns"][] = "PLAZO";
+$proto113["m_columns"][] = "cont_periodicidad";
+$proto113["m_columns"][] = "cont_valorinicial";
+$proto113["m_columns"][] = "cont_valormensual";
+$proto113["m_columns"][] = "cont_secop_enlace";
+$proto113["m_columns"][] = "documento_id";
+$proto113["m_columns"][] = "nombres";
+$proto113["m_columns"][] = "apellidos";
+$proto113["m_columns"][] = "nombresupfull";
+$proto113["m_columns"][] = "cargo_id";
+$proto113["m_columns"][] = "dependencia_id";
+$proto113["m_columns"][] = "sup_fechanot";
+$proto113["m_columns"][] = "sup_mailnot";
+$proto113["m_columns"][] = "sup_status";
+$proto113["m_columns"][] = "idusrglobal_fk";
+$proto113["m_columns"][] = "contractor_name";
+$proto113["m_columns"][] = "contractor_lname";
+$proto113["m_columns"][] = "contractor_nombresfull";
+$proto113["m_columns"][] = "contractor_email";
+$proto113["m_columns"][] = "contractor_email_mincit";
+$proto113["m_columns"][] = "prenumero";
+$proto113["m_columns"][] = "numregistro";
+$proto113["m_columns"][] = "cont_unspsc";
+$proto113["m_columns"][] = "cont_tipo_rubro";
+$proto113["m_columns"][] = "cont_tipopre";
+$proto113["m_columns"][] = "cont_causalc";
+$proto113["m_columns"][] = "cont_objeto";
+$proto113["m_columns"][] = "cont_obligaciones";
+$proto113["m_columns"][] = "cont_plazo";
+$proto113["m_columns"][] = "ctb_tipo_nombre";
+$proto113["m_columns"][] = "nombre_cargo";
+$proto113["m_columns"][] = "nombre_dependencia";
+$proto113["m_columns"][] = "id_depto_superior";
+$proto113["m_columns"][] = "Departamento_superior";
+$proto113["m_columns"][] = "cont_numpoliza";
+$proto113["m_columns"][] = "cont_secop_proceso";
+$proto113["m_columns"][] = "cont_fecha_aprobgarantia";
+$proto113["m_columns"][] = "cont_fechaapertura";
+$proto113["m_columns"][] = "cont_munejec";
+$proto113["m_columns"][] = "cont_cesion";
+$proto113["m_columns"][] = "cont_modifica";
+$proto113["m_columns"][] = "Username";
+$obj = new SQLTable($proto113);
+
+$proto112["m_table"] = $obj;
+$proto112["m_sql"] = "q_bandejaentrada_supervisores";
+$proto112["m_alias"] = "";
+$proto112["m_srcTableName"] = "q_bandejaentrada_supervisores";
+$proto114=array();
+$proto114["m_sql"] = "";
+$proto114["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto112["m_column"]=$obj;
-$proto112["m_contained"] = array();
-$proto112["m_strCase"] = "";
-$proto112["m_havingmode"] = false;
-$proto112["m_inBrackets"] = false;
-$proto112["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto112);
+$proto114["m_column"]=$obj;
+$proto114["m_contained"] = array();
+$proto114["m_strCase"] = "";
+$proto114["m_havingmode"] = false;
+$proto114["m_inBrackets"] = false;
+$proto114["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto114);
 
-$proto110["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto110);
+$proto112["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto112);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -8445,7 +8599,7 @@ $queryData_q_bandejaentrada_supervisores = createSqlQuery_q_bandejaentrada_super
 	
 								;
 
-																																																				
+																																																					
 
 $tdataq_bandejaentrada_supervisores[".sqlquery"] = $queryData_q_bandejaentrada_supervisores;
 

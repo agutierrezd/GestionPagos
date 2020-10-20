@@ -574,8 +574,10 @@ pdfDocument = {
 	
 			"stack": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn1 nombrecont }","bold":true},{"text":{$nombrecont_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -727,9 +729,6 @@ pdfDocument = {
 		},
 		margin: [0,0,0,15],
 	},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel hoja_ruta_2020_pn1 nombrecont }","bold":true},{"text":{$nombrecont_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

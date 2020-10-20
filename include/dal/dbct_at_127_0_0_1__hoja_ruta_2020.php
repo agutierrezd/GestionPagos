@@ -21,6 +21,7 @@ $dalTablehoja_ruta_2020["hr_estado_fecha"] = array("type"=>7,"varname"=>"hr_esta
 $dalTablehoja_ruta_2020["hr_estado_file"] = array("type"=>200,"varname"=>"hr_estado_file", "name" => "hr_estado_file");
 $dalTablehoja_ruta_2020["hr_estado_user"] = array("type"=>200,"varname"=>"hr_estado_user", "name" => "hr_estado_user");
 $dalTablehoja_ruta_2020["sys_user"] = array("type"=>200,"varname"=>"sys_user", "name" => "sys_user");
+$dalTablehoja_ruta_2020["sys_sup"] = array("type"=>200,"varname"=>"sys_sup", "name" => "sys_sup");
 $dalTablehoja_ruta_2020["sys_dep"] = array("type"=>3,"varname"=>"sys_dep", "name" => "sys_dep");
 $dalTablehoja_ruta_2020["sys_user_actual"] = array("type"=>200,"varname"=>"sys_user_actual", "name" => "sys_user_actual");
 $dalTablehoja_ruta_2020["sys_fecha_reg"] = array("type"=>135,"varname"=>"sys_fecha_reg", "name" => "sys_fecha_reg");
